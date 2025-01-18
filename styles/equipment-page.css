@@ -1,0 +1,402 @@
+.title {
+  text-align: start;
+  margin-left: 40px;
+}
+.badge {
+  left: -1.3em;
+}
+
+.badge h2 {
+  margin: 0;
+}
+
+.equipment-title{
+  justify-content: flex-start;
+}
+
+.equipments-cards {
+  margin: 5em 0;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: repeat(6, 1fr);
+  height: fit-content;
+  margin-top: 2rem;
+}
+
+.top-line-wrapper-hr {
+  top: 2.4% !important;
+}
+
+.equipment-card {
+  display: flex;
+  position: relative;
+  border-top: 1px solid #e0e0e050;
+  border-bottom: 1px solid #e0e0e050;
+  height: 25rem;
+}
+
+.equipment-card .equipment-text h2 {
+  font-weight: 600;
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.equipment-card .equipment-text p {
+  font-size: 1rem;
+  font-family: "Manrope";
+ 
+  width: 60%;
+}
+.equipment-card .equipment-img {
+  position: absolute;
+  z-index: -10;
+  width: auto;
+  height: 100%;
+  right: 0.1rem;
+  bottom: 0;
+}
+
+.equipment-tabs .tabs{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equipment-tabs .tab{
+  cursor: pointer;
+}
+
+.equipment-tabs .tab.active{
+  background: #337BEF;
+  color: #fff;
+}
+
+.equipment-tabs .tab{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Manrope";
+}
+
+
+.equipment-tabs .tab:nth-child(1){
+  padding: 1.3rem 0.6rem;
+  padding: 3.8rem 1.3rem 0.5rem 1.3rem;
+  border-bottom: 1px solid rgba(5, 12, 26, 0.2);
+  border-left: 1px solid rgba(5, 12, 26, 0.2);
+  border-top: 1px solid rgba(5, 12, 26, 0.2);
+  width: 18%;
+}
+.equipment-tabs .tab:nth-child(2){
+  padding: 3.8rem 1.3rem 0.5rem 2.6rem;
+  border-bottom: 1px solid rgba(5, 12, 26, 0.2);
+  border-left: 1px solid rgba(5, 12, 26, 0.2);
+  border-top: 1px solid rgba(5, 12, 26, 0.2);
+  width: 37.55%;
+}
+.equipment-tabs .tab:nth-child(3){
+  padding: 3.8rem 1.3rem 0.5rem 2.6rem;
+ border: 1px solid rgba(5, 12, 26, 0.2);;
+  width: 32.35%;
+}
+.equipment-tabs .sub{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.3rem;
+  border-bottom: 1px solid rgba(5, 12, 26, 0.2);
+  border-left: 1px solid rgba(5, 12, 26, 0.2);
+  width: 18%;
+  
+}
+.equipment-tabs .sub:last-child{
+  border-right: 1px solid rgba(5, 12, 26, 0.2);
+}
+.equipment-tabs .sub.small{
+  width: 4.36rem;
+
+}
+
+
+
+.equipment-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+  margin-bottom: 0;
+}
+
+.panel {
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-button-detais {
+  padding: 1.5em 3.5em;
+  position: absolute;
+  bottom: 7%;
+  left: 3%;
+  color: gray;
+  border-color: gray;
+  opacity: 1;
+}
+
+.hero-button-detais:hover {
+  color: white;
+  border-color: #337bef;
+  background: #337bef;
+  cursor: pointer;
+}
+.hero-center-container {
+  width: 74%;
+}
+
+.top-line-wrapper hr {
+  top: 5%;
+}
+
+.modal-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.modal-wrapper h2 {
+  font-family: "Roboto";
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 70%;
+}
+.modal-wrapper p {
+  font-family: "Manrope";
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.modal-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 3em;
+  padding: 4em 0;
+}
+.modal-main-img {
+  border: 1px solid #00000033;
+}
+
+.modal-main-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 50%;
+}
+.modal-blueprint{
+  margin-top: 2rem;
+}
+.modal-main-description p {
+  font-family: "Manrope";
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.modal-main-description h3 {
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+.vacancy-modal {
+  width: auto !important;
+}
+.equipment-modal{
+  transform: translate(0);
+  display: none;
+}
+/* contacts */
+.contacts {
+  height: 90vh !important;
+}
+
+.contact-section {
+  height: 100% !important;
+}
+
+.contacts .title{
+  margin-left: 0;
+}
+
+.contact-box {
+  margin-top: 2rem !important;
+}
+.contact-section-mini {
+  height: 100% !important;
+}
+.contacts-conteiner {
+  height: 100% !important;
+}
+
+@media (max-width: 1440px){
+  .equipment-card .equipment-img{
+    height: 85%;
+  }
+  .equipment-card .equipment-text p{
+    width: 60%;
+  }
+  .equipment-tabs .tab:nth-child(2){
+    width: 37.7%;
+  }
+  .equipment-tabs .tab:nth-child(3){
+    width: 31.3%;
+  }
+  .equipment-tabs .tab{
+    font-size: 0.9rem;
+  }
+  .equipment-tabs .sub{
+    width: 15rem;
+  }
+  .equipment-tabs .sub.small{
+    width: 3.5rem;
+  }
+}
+
+.vacancy-modal{
+    background: rgba(000, 000, 000, 0.7);
+}
+
+.vacancy-modal-content{
+  position: relative;
+    width: 70%;
+    background: #fff;
+    margin-left: auto;
+    padding-bottom: 7rem;
+}
+
+.modal-blueprint img{
+  width: 100%;
+}
+.tab-mobile-btn{
+  display: none;
+}
+
+@media (max-width: 962px){
+  .hero-center-container{
+    width: 100%;
+  } 
+  .contacts-conteiner{
+    width: 100% !important;
+    height: 100%;
+  }
+  .top-line-wrapper{
+    display: none;
+  }
+  .left-line-wrapper{
+    display: none;
+  }
+  .right-line-wrapper{
+    display: none;
+  }
+  .middle-line-wrapper{
+    display: none;
+  }
+  .ground-badge{
+    display: none;
+  }
+  .hero-center-container{
+    padding-top: 0;
+  }
+  .equipment-title{
+    margin-top: 4rem;
+    font-size: 4.6rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+  }
+  .mobile-project-pointer{
+    padding: 2rem;
+    border-bottom: 1px solid rgba(5, 12, 26, 0.2);
+  }
+  .equipment-tabs .tabs{
+    flex-direction: column;
+  }
+  .equipments-cards{
+    margin-top: 0;
+  }
+  .tab{
+    width: auto !important;
+    padding: 2rem 3rem !important;
+    font-size: 2rem !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tab-mobile-btn{
+    width: auto !important;
+    padding: 1rem 3rem !important;
+    font-size: 2rem !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Manrope";
+    background: #337BEF;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .tab-mobile-btn .close{
+    display: none;
+  }
+  .tab-mobile-btn.open svg{
+    display: none;
+  }
+  .tab-mobile-btn.open .close{
+    display: block;
+  }
+  .tabs{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s !important;
+    display: block !important;
+  }
+  .tab:nth-child(1){
+    flex-direction: row-reverse;
+  }
+  .tab:nth-child(2){
+    flex-direction: row-reverse;
+  }
+  .tab:nth-child(3){
+    flex-direction: row-reverse;
+  }
+  .equipments-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .equipment-card{
+    height: 55rem;
+    overflow: hidden;
+  }
+  .equipment-card .equipment-text h2{
+    font-size: 2.5rem;
+  }
+  .equipment-card .equipment-text p{
+    width: 75%;
+    font-size: 1.6rem;
+  }
+  .hero-button-detais{
+    padding: 1.3rem 4rem;
+  }
+  .equipment-card .equipment-img{
+    height: 70%;
+  }
+  .equipment-card:nth-child(1) .equipment-img{
+    right: -9rem;
+  }
+  .vacancy-modal-content{
+    width: 100%;
+  }
+  .vacancy-modal-exit-button{
+    margin-top: 0 !important;
+  }
+  .modal-wrapper p{
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+}
+
+

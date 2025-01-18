@@ -1,0 +1,907 @@
+.header-team {
+  background: url("../assets/images/team.webp") center center no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 80%;
+}
+html {
+  font-family: "Montserrat";
+}
+
+.main-subtitle-text {
+  padding: 10px;
+}
+.map-image-mobile{
+  display: none;
+}
+.main-subtitle-team-box {
+  background: white;
+  width: 100%;
+  height: 10px;
+}
+
+.menu-logo {
+  margin: -1em;
+  margin-top: 2em;
+}
+
+.team {
+  height: fit-content;
+  padding-bottom: 10em;
+  position: relative;
+}
+
+.team-container-cards {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.team-card {
+  min-width: 25%;
+  margin: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+.team-card-none {
+  cursor: default;
+}
+.team-container {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.team-lines hr {
+  z-index: -10000;
+  border: none;
+  background-color: #e0e0e050;
+}
+
+.team-front-line hr {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 0.0625rem;
+}
+.team-left-line hr {
+  position: absolute;
+  left: 10%;
+  height: 100%;
+  width: 0.0625rem;
+}
+.team-right-line hr {
+  position: absolute;
+  right: 10%;
+  height: 100%;
+  width: 0.0625rem;
+}
+
+.team-bottom-line hr {
+  bottom: 10%;
+  position: absolute;
+  width: 100%;
+  height: 0.0625rem;
+}
+
+.team-container-title h2 {
+  margin: 0;
+  font-size: 60px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+.team-card img {
+  width: 100%;
+  height: 100%;
+}
+.team-card-blue {
+  background: #337bef;
+}
+
+.team-card-worker h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 7px 0;
+}
+
+.team-container-title span {
+  color: #337bef;
+}
+.team-container {
+  padding-top: 10%;
+}
+.team-last-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.badge h2 {
+  position: absolute;
+  margin: 0;
+  top: 16%;
+  left: -16%;
+  font-weight: 600;
+  opacity: 0.1;
+  transform: rotate(90deg);
+  font-size: 10rem;
+}
+.logo-container img {
+  padding-top: 2.5em;
+  padding-left: 1.5em;
+}
+.form-img-container{
+  height: 43rem !important;
+}
+.form-img {
+  clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+  transition: 0.5s ease-in-out;
+  width: 40.25rem;
+  height: 43rem;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.privacy{
+  width: 30rem;
+}
+.form-team-checkbox-container .custom-checkbox{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form-team-checkbox-container .custom-checkbox-box{
+  min-width: 20px;
+  min-height: 20px;
+  align-self: center;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  color: white;
+  overflow: hidden;
+}
+.form-description {
+  padding: 20px 0px;
+  transition: 0.3s ease-in-out;
+}
+
+.form-wrapper {
+  width: 100%;
+  padding: 3em;
+  background: #337bef;
+}
+
+.form-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 70px;
+  letter-spacing: -2px;
+  margin: 0;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-team-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+}
+
+.form-inputs input {
+  padding: 20px 20px 20px 20px;
+  color: white;
+  background: #2e70db;
+}
+
+.form-inputs input::placeholder {
+  color: white;
+}
+.form-team-buttons {
+  display: flex;
+  padding: 30px 0;
+  gap: 20px;
+}
+
+.form-team-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-checkbox {
+  accent-color: #2e70db;
+}
+
+.form-team-submit {
+  background: white;
+  border: none;
+  color: #337bef;
+  width: 20%;
+  transition: 0.3s ease-in-out;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none; /* Скрываем стандартный чекбокс */
+}
+
+.custom-checkbox-box {
+  align-self: flex-end;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: white; /* Белая заливка по умолчанию */
+  display: inline-block;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox-box::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 6px;
+  height: 9px;
+  height: 9px;
+  border: solid #337bef;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0; /* Галочка скрыта по умолчанию */
+  transition: opacity 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box::after {
+  opacity: 1; /* Показываем галочку при выборе */
+}
+
+.privacy {
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0ms !important;
+}
+
+.privacy-link {
+  text-decoration: underline !important;
+}
+.contact-section-mini {
+  background: none;
+}
+.contacts {
+  height: 90vh;
+}
+
+.employee-modal {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(000, 000, 000, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: none;
+}
+
+.employee-modal-content{
+  width: 70%;
+  margin-left: auto;
+  background: #fff;
+  height: 100%;
+  transform: translateX(100%);
+}
+
+.modal-exit-button {
+  background: #337bef;
+  border: none;
+  padding: 10px;
+}
+
+.modal-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 4.5rem;
+  letter-spacing: -2px;
+  margin-bottom: 70px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.modal-img {
+  width: 35%;
+}
+
+.modal-title span {
+  color: #337bef;
+}
+
+.modal-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.modal-name {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  letter-spacing: -3%;
+  font-size: 4.5rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5em;
+  display: flex;
+  gap: 1rem;
+}
+.modal-name-blue {
+  color: #337bef;
+}
+.modal-info {
+  display: flex;
+  align-items: center;
+}
+
+.modal-desc-from-card {
+  font-family: "Roboto";
+  font-weight: 700;
+  letter-spacing: -3%;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  align-self: center;
+}
+
+.modal-additional-description,
+.modal-qualification {
+  font-family: "Manrope";
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.modal-text {
+  width: 50%;
+  margin: 0 auto;
+}
+.breadcrumbs a {
+  color: #ffffffb2 !important;
+}
+.breadcrumbs .active {
+  color: white !important;
+}
+
+.map-conteiner {
+  width: 80% !important;
+}
+
+.form-img-mobile {
+  display: none;
+}
+
+.modal-form-complete {
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  z-index: 1001;
+  min-width: 50%;
+  min-height: 40%;
+  background: white;
+}
+
+.modal-form-complete-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  left: 0%;
+  background: rgb(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+.modal-form-complete {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 40px;
+}
+.modal-form-complete span {
+  color: #337bef;
+}
+
+.modal-form-complete-title {
+  font-family: "Roboto";
+  font-size: 5rem;
+  margin: 0;
+}
+.modal-form-complete-description {
+  color: #050c1a;
+  font-family: "Manrope";
+  font-size: 1.4rem;
+}
+
+.modal-form-complete-exit {
+  padding: 2em 8em;
+  background: none;
+  outline: none;
+  color: #337bef;
+  border: 1px solid #337bef;
+}
+
+.mobile-header,
+.vacancy-link {
+  display: none;
+}
+@media screen and (max-width: 1440px) {
+  .map {
+    height: auto !important;
+  }
+  .contacts-conteiner {
+    width: 75vw;
+  }
+
+  .contacts-title {
+    font-size: 3.5rem;
+  }
+  .vacancy-center {
+    width: 75vw;
+  }
+
+  .vacancy-right-line hr {
+    right: 12.5vw;
+  }
+
+  .vacancy-left-line hr {
+    left: 12.5vw !important;
+  }
+  .vacancy-images img {
+    transform: scale(0.7);
+    margin-right: -3em;
+  }
+
+  .vacancies-img-second {
+    left: 19em;
+  }
+
+  .breadcrumbs {
+    display: block;
+    font-size: 1.2rem;
+    margin-left: 3em;
+  }
+  .for-lines {
+    height: 100vh !important;
+  }
+  .breadcrumbs a {
+    font-size: 1.2rem !important;
+  }
+
+  .main {
+    width: 75vw;
+    height: 80vh;
+  }
+
+  .header-team {
+    background: url("../assets/images/team-mobile-background.webp") no-repeat center center !important;
+    background-size: cover !important;
+  }
+  .team-card {
+    margin: 8px !important;
+  }
+  .team-container {
+    width: 70vw;
+  }
+
+  .team-left-line hr {
+    left: 12.5vw !important;
+  }
+
+  .team-right-line hr {
+    right: 12.5vw !important;
+  }
+
+  .form-img {
+    background-size: cover;
+  }
+  .map-block {
+    width: 70vw !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .map-title {
+    font-size: 3.8rem;
+  }
+
+  .map-subtitle-text {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 40%;
+  }
+  .privacy{
+    width: auto;
+  }
+  .form-wrapper{
+    width: auto;
+  }
+  .map {
+    width: 100vw !important;
+  }
+  .map-block {
+    width: 100vw !important;
+    overflow-x: scroll !important;
+  }
+  .map-block svg {
+    width: 113vw !important;
+  }
+  .map-text {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+  }
+
+  .map-block::-webkit-scrollbar {
+    width: 0;
+  }
+
+  /* ie 10+ */
+  .map-block {
+    -ms-overflow-style: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .header-team {
+    display: none;
+  }
+
+  .mobile-header {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/images/vacancy-mobile-background.webp") no-repeat center center;
+    background-size: cover;
+    display: block;
+  }
+  .mobile-header-container {
+    width: 85%;
+    margin: 0 auto;
+    height: calc(100vh - 40px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .menu-logo {
+    display: none;
+  }
+
+  .mobile-header-logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mobile-header-logo hr {
+    position: absolute;
+    top: 12em;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .mobile-header-title {
+    display: flex;
+  }
+
+  .menu-items,
+  .user-level,
+  .team-lines,
+  .badge {
+    display: none !important;
+  }
+  .team-container {
+    padding-top: 0;
+  }
+
+  .mobile-project-pointer hr {
+    right: -15vw;
+  }
+  .team-card-worker h3 {
+    font-size: 3.5rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+  }
+
+  .team-card-description p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .mobile-title {
+    text-align: start;
+    line-height: normal;
+    font-size: 3.1rem;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .mobile-header-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3em;
+  }
+
+  .header-team,
+  .contacts {
+    display: none;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-img {
+    display: none;
+  }
+  .form-img-mobile {
+    display: block;
+    width: 100%;
+    height: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    margin-bottom: -50%;
+  }
+  .mobile-vacancy-description {
+    display: block;
+  }
+  .vacancies-mobile .vacancies {
+    display: block;
+  }
+  .vacancies-cards {
+    gap: 0;
+  }
+
+  .mobile-header-scroll-decription {
+    font-family: "Manrope";
+    font-size: 2.6rem;
+    max-width: 65%;
+    color: white;
+    border-left: 1px solid white;
+    padding-left: 10px;
+  }
+
+  .mobile-header-scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .mobile-header-scroll-button {
+    padding: 14px 20px 8px 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .mobile-header-scroll-button img {
+    transform: rotate(90deg) scale(0.6);
+  }
+
+  .mobile-header-send {
+    padding: 15px 40px;
+    background: white;
+    border: none;
+    font-size: 2rem;
+    color: #337bef;
+  }
+
+  .mobile-header-title p {
+    text-align: start;
+  }
+
+  .form-team-inputs {
+    width: 90% !important;
+  }
+  .form-team-inputs input::placeholder {
+    font-size: 2rem !important;
+    opacity: 0.5;
+  }
+  .form-team-inputs input {
+    font-size: 2rem !important;
+  }
+  .form-team-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .privacy {
+    font-size: 1.6rem !important;
+    opacity: 1 !important;
+  }
+  .form-team-submit {
+    padding: 2rem 6rem;
+    align-self: flex-start;
+    width: auto !important;
+  }
+
+  .form-description {
+    font-size: 2rem;
+  }
+
+  .form-title {
+    line-height: normal !important;
+    margin-top: 1em;
+    letter-spacing: normal;
+    font-size: 6rem;
+    font-family: "Roboto";
+  }
+
+  .team-card {
+    margin-top: 10px;
+  }
+
+  .team-card-first {
+    margin-bottom: 0;
+  }
+
+  .team-container-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-container-title h2 {
+    font-size: 6rem;
+  }
+  .team-container{
+    width: auto;
+    padding:  0 2rem;
+  }
+  .vacancy-link {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #050c1a;
+    color: #050c1a;
+    text-align: center;
+    font-family: "Manrope";
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+  }
+  .team-card img{
+    height: 55rem;
+    object-fit: cover;
+  }
+  .team-card{
+    transform: translate(0) !important;
+    opacity: 1 !important;
+  }
+  .for-lines{
+    display: none;
+  }
+  .region-name{
+    display: none;
+  }
+  .map-block{
+    display: none;
+  }
+  .team{
+    padding-bottom: 0;
+  }
+  .form-img-container{
+    height: auto !important;
+  }
+  .map{
+    display: block !important;
+    border-top: 0 !important;
+    padding: 2rem 4rem;
+    margin-top: 5rem !important;
+    overflow: hidden;
+    width: auto !important;
+  }
+  .map-conteiner{
+    margin: 0 !important;
+    width: auto !important;
+  }
+  .map-text{ 
+    padding: 0 !important;
+  }
+  .map-title{
+    font-size: 5rem !important;
+    line-height: normal !important;
+    margin-top: 10rem;
+  }
+  .map-image-mobile{
+    display: block;
+    margin-top: -25rem;
+    width: 100%;
+    height: auto;
+  }
+  .map-image-mobile img{
+    width: 110%;
+  }
+  .map-subtitle{
+    margin-top: -20rem;
+  }
+  .team{
+    overflow: hidden;
+  }
+  .employee-modal{
+    width: auto;
+  }
+  .employee-modal-content{
+    width: 100%;
+  }
+  .modal-exit-button{
+    display: block;
+    margin-left: auto;
+    margin-bottom: 3rem;
+  }
+  .modal-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-img{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .modal-text{
+    width: 100%;
+  }
+  .modal-title{
+    display: none;
+  }
+  .mobile-project-pointer img{
+    padding-bottom: 0;
+  }
+  .mobile-project-pointer hr{
+    width: 107%;
+    right: auto;
+    bottom: 0;
+    left: -2rem;
+  }
+  .mobile-project-logo p{
+    padding-bottom: 0;
+  }
+  .contacts{
+    display: block !important;
+  }
+
+  
+  .contacts-title{
+    font-size: 40px;
+  }
+  .contacts-conteiner{
+    width: 100% !important;
+    height: 100%;
+  }
+}

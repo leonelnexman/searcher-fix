@@ -1,0 +1,1125 @@
+
+body::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+body { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+body { overflow: -moz-scrollbars-none; }
+
+.vacancy-hero-button {
+    padding: 30px 60px;
+    background: white;
+    color :#337BEF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease-in-out ;
+    z-index: 10;
+}
+.main-subtitle-text {
+    padding: 10px;
+}
+.top-line {
+    top: 0em;
+}
+
+.vacancy-hero-button:hover{
+    background: #337BEF;
+    color :  white;
+}
+.vacancy-hero-center{
+    display: flex;
+    flex-direction: column;
+    gap:2em
+}
+
+.vacancy-hero-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.vacancy-lines hr {
+    z-index: -10000;
+    border: none;
+    background-color: #e0e0e050;
+}
+.vacancy {
+    height:100%;
+    padding-bottom:10em;
+    position: relative;
+}
+.vacancy-middle-line hr{
+    position: absolute;
+    top:15%;
+    width: 100%;
+    height: 0.025rem;
+}
+
+.vacancy-front-line hr{
+    position: absolute;
+    top:5%;
+    width: 100%;
+    height: 0.0725rem;
+
+}
+.vacancy-left-line hr{
+    position: absolute;
+    left:10%;
+    height: 100%;
+    width: 0.0725rem;
+}
+.vacancy-right-line hr{
+    position: absolute;
+    right:10%;
+    height: 100%;
+    width: 0.0725rem;
+}
+
+.vacancy-bottom-line hr{
+    bottom: 36.5%;
+    position: absolute;
+    width: 100%;
+    height: 0.0725rem;
+}
+
+.vacancy-badge h2{
+    top:3em;
+    left: -2.1em;
+}
+
+.vacancy-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+.vacancy-center {
+    padding-top: 3em;
+    height: fit-content ;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: -1em;
+}
+.vacancy-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0 ;
+    transform: translateY(50%);
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+.vacancy-text {
+    align-self: flex-end;
+    padding-right: 3em;
+}
+.vacancy-text-blue{
+    color: #337BEF;
+}
+.vacancy-description {
+    max-width: 35em;
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateX(50%);
+}
+.vacancy-second-img-row {
+    display: flex;
+    align-items: flex-start;
+}
+.vacancy-man-third-img {
+    align-self: flex-start;
+}
+.vacancy-images img{
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.vacancy-images {
+    position: relative;
+    display: block;
+}
+.vacancies-title-container h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto';
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.vacancies-cards {
+    display: flex;
+    flex-direction: column;
+    gap:30px
+}
+
+.vacancy-card {
+    opacity: 0;
+    background: rgba(245, 245, 245, 0.4);
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 10;
+}
+
+.vacancy-card-button {
+    border: 2px solid white;
+    padding:15px;
+    background: none;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.vacancy-card-button svg{
+   transform: scale(1.4);
+}
+
+
+.vacancy-card:hover .vacancy-card-button{
+    opacity: 1;
+
+}
+
+.vacancy-card:hover{
+    background: #337BEF;
+    color: white;
+}
+
+.vacancy-card h3 {
+    font-size: 2rem;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+.vacancy-modal {
+    position: fixed;
+    overflow-y: auto;
+    max-height:100vh ;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color: white;
+    z-index: 10000;
+    display: none;
+    flex-direction: column;
+}
+.vacancy-names p {
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+
+.modal-about-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.modal-about-criterion-list li{
+    display: flex;
+    gap:2px;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-family: 'Manrope';
+}
+.modal-about-criterion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    font-family: 'Manrope'
+}
+.modal-about-card-title {
+    padding-left: -30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.modal-exit {
+    width: 50%;
+}
+.modal-vacancy-description {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+.vacnacy-modal-grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr  1.8fr;
+    height: fit-content;
+    padding-bottom: 40px;
+}
+.modal-vacancy-main-title span {
+    color: #337BEF;
+}
+.modal-name {
+    font-size: 2em;
+    border-top: 1px solid gray;
+
+}
+
+.modal-name {
+    text-transform: initial !important;
+    font-weight: 700;
+    font-family: 'Manrope';
+}
+.modal-vacancy-main-title {
+    font-family: 'Roboto';
+    font-size: 4.69rem;
+    width: 60rem;
+    margin-left: 25rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.modal-vacancy-main-description{
+    font-family: 'Manrope';
+    font-size: 1.3rem;
+    margin-top: 60px;
+    font-weight: 400;
+}
+
+.vacancy-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:10vh;
+    margin-bottom: 30px;
+}
+
+.vacancy-modal-exit-button {
+    position: absolute;
+    left: 0;
+    top:0;
+    background: #337BEF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-about-criterion-title {
+    font-size: 1.4rem;
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+
+.modal-about-li-circle {
+    padding: 10px;
+    border-radius: 100%;
+    background: black;
+    transform: scale(0.3);
+}
+.modal-criterion-part-line {
+    margin: 20px 0px;
+}
+.modal-desc , .modal-name {
+    border-top: 1px solid #050c1a28;
+    padding: 20px 0;
+}
+
+.modal-criterion-part-line-hr  {
+    border: none;
+    border-top: 2px solid  #050c1a28;
+}
+
+.vacancy-about-wrapper ,.vacancy-first-name{
+    border: none;
+}
+.modal-desc input{
+    width: 100%;
+    padding: 20px;
+    background: rgba(5, 12, 26, 0.1);
+    border: none;
+    font-size: 1.1rem;
+
+}
+
+.modal-desc input::placeholder{
+    font-size: 1.1rem;
+}
+.modal-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 51rem;
+}
+
+.modal-vacancy-main-description{
+    width: 50rem;
+    margin-left: 25rem;
+}
+
+.vacancies-mobile .vacancies {
+    display: none;
+}
+
+
+.modal-submit-button {
+    padding: 20px;
+    background: #337BEF;
+    color: white;
+    opacity: 1 !important;
+    font-family: 'Manrope';
+    font-size: 1.02rem;
+}
+
+.modal-file-input {
+    background: none;
+}
+
+.input-file {
+	position: relative;
+	display: inline-block;
+}
+.input-file-btn {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-size: 14px;
+	vertical-align: middle;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #337BEF;
+	padding:15px 20px;
+    border-radius:100px;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	transition: background-color 0.2s;
+}
+.input-file-text {
+	padding: 0 10px;
+	line-height: 40px;
+	display: inline-block;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.vacancy-modal-button-wrapper {
+    display: flex;
+    gap:30px;
+}
+.modal-privacy-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.modal-privacy-links input {
+    width: auto;
+}
+.vacancy-modal-last-section {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    position: relative;
+}
+.modal-line-wrapper hr{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100vw;
+}
+.vacancy-modal-submit  {
+    display: flex;
+    flex-direction: column;
+    gap:30px
+}
+
+
+.vacancy-description {
+    transition-delay: 0s !important;
+}
+
+.vacancy-mobile-images,.mobile-vacancy-description {
+    display: none;
+}
+
+.vacancies-img-second {
+    position: absolute;
+    bottom:20%
+}
+
+.custom-checkbox-modal {
+    opacity: 1 !important;
+}
+.privacy-modal{
+    opacity: 1 !important;
+}
+
+.privacy-link-modal {
+    color: #337BEF;
+}
+.custom-checkbox-box-modal {
+    background: rgba(5, 12, 26, 0.1);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box-modal{
+    background: #337BEF;
+}
+
+.custom-checkbox-box-modal::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 9px;
+    height: 9px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.mobile-header {
+    display: none;
+}
+
+.vacancy-modal{
+    background: rgba(000, 000, 000, 0.7);
+}
+
+.vacnacy-modal-grid{
+    width: 100%;
+    padding: 0rem 5rem 0 3rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-name{
+    width: 25rem;
+    font-size: 1.6rem;
+}
+
+.vacancy-modal-content{
+  position: relative;
+    width: 70%;
+    background: #fff;
+    margin-left: auto;
+    padding-bottom: 7rem;
+    overflow-x: hidden;
+}
+
+.mobile-project-pointer {
+    display: none;
+}
+
+.form-img{
+    width: 41.25rem;
+    height: 43rem;
+    object-fit: cover;
+}
+
+.form-img-container{
+    height: 43rem; 
+}
+
+@media screen and (max-width: 1440px) {
+    .contacts-conteiner {
+        width: 75vw;
+    }
+    .contacts-title {
+        font-size: 3.5rem;
+    }
+    .vacancy-center {
+        width: 75vw;
+    }
+
+    .vacancy-right-line hr {
+        right: 12.5vw;
+    }
+
+    .vacancy-left-line hr {
+        left :12.5vw !important
+    }
+    .vacancy-images img   {
+        transform: scale(0.7);
+        margin-right:-3em ;
+    }
+
+    .vacancies-img-second {
+        left: 19em;
+    }
+
+    .breadcrumbs {
+        display: block;
+        font-size: 1.2rem
+    }
+    .for-lines{
+        height: 100vh !important;
+    }
+    .breadcrumbs a {
+        font-size: 1.2rem
+    }
+
+    .main {
+        width: 75vw;
+    }
+
+    .header-team {
+        background: url("../assets/images/vacancy-background-medium.webp") no-repeat !important;
+        background-size: cover !important;
+    }
+    .top-line {
+        top: -10% !important;
+    }
+
+
+    .modal-name {
+        font-size: 1.8rem;
+    }
+
+    .modal-desc input {
+        width: 40em;
+    }
+    .vacnacy-modal-grid {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .top-line {
+        top: -10% !important;
+    }
+
+    html {
+        font-size: 80%;
+    }
+    .vacancies-img-second {
+        left: 21em;
+    }
+}
+@media screen and (max-width: 1152px) {
+    .main {
+        width: 70vw;
+    }
+    .vacancy-center {
+        width: 70vw;
+    }
+
+    .vacancy-right-line hr {
+        right: 15vw;
+    }
+
+    .vacancy-left-line hr {
+        left :15vw !important
+    }
+
+    .contacts-conteiner {
+        width: 70vw;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    .vacancies-img-second {
+        left: 26em;
+    }
+    html {
+        font-size: 60%;
+    }
+}
+@media screen and (max-width: 768px) {
+      html {
+    font-size: 40%;
+    }
+    .header {
+     display: none;
+    }
+    .vacancy-center{
+        width: 100% !important;
+    }
+    .privacy{
+        width: auto;
+    }
+    .vacancy-container{
+        width: auto;
+        padding: 2rem;
+        justify-content: flex-start;
+    }
+    .vacancy-mobile-images{
+        width: 100%;
+    }
+    .vacancy{
+        padding-bottom: 0;
+    }
+    .vacancy-center{
+        padding-top: 0;
+    }
+    .mobile-project-pointer hr{
+        width: 105.7%;
+        right: auto;
+        left: -2rem;
+        bottom: 0;
+    }
+    .mobile-project-logo p{
+        padding-bottom: 0;
+    }
+    .mobile-project-pointer{
+        padding-top: 0;
+    }
+    .mobile-project-pointer img{
+        padding-bottom: 0;
+    }
+    .form-img-container{
+        height: auto !important; 
+    }
+    .mobile-header {
+         width: 100%;
+         height: 100vh;
+         background: url("../assets/images/vacancy-mobile-background.webp") no-repeat center center ;
+         background-size: cover;
+         display: block;
+     }
+
+
+     .menu-logo {
+        display: none;
+     }
+
+
+     .menu-items, .user-level, .vacancy-lines {
+        display: none !important;
+    }
+
+
+     .mobile-header-title {
+        display: flex;
+     }
+
+
+
+
+
+     .mobile-title {
+        text-align: start;
+        line-height: normal;
+        font-size: 3.3rem;
+        color: #fff;
+        font-family: 'Roboto';
+        font-weight: 700;
+        text-transform: uppercase
+    }
+
+    .mobile-header-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:3em;
+        margin-top: 15em;
+    }
+    .mobile-header-container {
+        width: 85%;
+        margin: 0 auto;
+        height: calc(100vh - 40px);
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+     }
+
+     .menu-logo {
+        display: none;
+     }
+
+     .mobile-header-logo {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+        gap:20px
+     }
+
+     .mobile-header-logo hr{
+          position: absolute;
+          top: 12em;
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+     .mobile-header-title {
+        display: flex;
+     }
+    .vacancies,.contacts {
+        display: none;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-img {
+        display: none;
+    }
+    .form-img-mobile {
+        display: block;
+        width: 100%;
+        height: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+        margin-bottom:-50% ;
+    }
+    .mobile-vacancy-description {
+        display: block;
+    }
+    .vacancies-mobile .vacancies {
+        display: block;
+    }
+    .vacancies-cards {
+        gap:0
+    }
+    .vacancy-card  {
+        background: none;
+        border-top: 1px solid rgba(5, 12, 26, 1);
+        padding: 10px;
+    }
+    .vacancy-card:hover  {
+        background: white !important;
+        color: black !important;
+    }
+
+    .vacancy-card-button svg{
+        transform: scale(0.7);
+    }
+
+   .mobile-header-scroll-decription {
+        font-family: 'Manrope';
+        font-size: 2.6rem;
+        max-width: 65%;
+        color: white;
+        border-left: 1px solid white;
+        padding-left: 10px;
+   }
+
+   .mobile-header-scroll {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      margin: 0 auto
+   }
+
+   .mobile-header-scroll-button {
+        padding: 14px 20px 8px 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.5);
+   }
+   .mobile-header-scroll-button  img{
+        transform: rotate(90deg) scale(0.6);
+   }
+
+    .mobile-header-send {
+        padding: 15px 40px ;
+        background: white;
+        border: none;
+        font-size: 2rem;
+        color: #337BEF;
+    }
+
+
+    .mobile-header-title p{
+        text-align: start;
+    }
+
+    .vacancy-title {
+        font-weight: 700;
+        font-family: 'Roboto';
+        text-align: start;
+        font-size: 6rem;
+        margin-bottom: 0 !important;
+    }
+
+    .vacancy-text {
+        align-self: flex-start;
+    }
+
+    .vacancy-mobile-images {
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        position: relative;
+        margin-bottom: 12em;
+        margin-top: 2em;
+    }
+
+    .vacancies-title-container h2 {
+        font-weight: 700;
+        font-family: 'Roboto';
+        font-size: 6rem;
+    }
+
+    .mobile-vacancy-description {
+        font-size: 2.5rem;
+        font-family: 'Manrope';
+        font-weight: 400;
+        margin-top: 6em !important;
+    }
+
+    .vacancies-first-img-row {
+        display: flex;
+    }
+
+    .form-team-inputs {
+        width: 90% !important;
+    }
+    .form-team-inputs input::placeholder {
+        font-size: 2rem !important;
+        opacity: 0.5;
+    }
+    .form-team-inputs input {
+        font-size: 2rem !important;
+    }
+    .form-team-buttons {
+        flex-direction: column-reverse;
+    }
+
+    .privacy {
+        font-size: 1.6rem !important;
+        opacity: 1 !important;
+    }
+    .form-team-submit  {
+        padding: 2rem 6rem;
+        align-self: flex-start;
+        width: auto !important;
+    }
+
+    .form-description {
+        font-size: 2rem;
+    }
+
+    .form-title {
+        line-height: normal !important;
+        margin-top: 1em;
+        letter-spacing: normal;
+        font-size: 6rem;
+        font-family: 'Roboto';
+    }
+
+
+    .vacancies-img-second {
+        position: initial;
+
+    }
+
+
+    .vacancies-img-first {
+        width: 35%;
+        margin-left: 9em ;
+
+    }
+    .vacancies-img-second {
+        width: 50%;
+        position: absolute;
+        top: 30%;
+        left: auto;
+    }
+
+    .vacancies-img-third {
+        width: 17%;
+        margin-top: -10em;
+        margin-left: 0em;
+    }
+    .vacancies-img-fourth {
+        width: 35%;
+        position: absolute;
+        bottom: -70%;
+        right: 52%;
+    }
+    .vacnacy-modal-grid{
+        width: 100%;
+        padding: 0 !important;
+    }
+    .vacancies-title-container {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .vacancy-modal-content{
+        width: 100%;
+    }
+    .vacancy-title{
+        font-size: 6rem;
+        width: 85%;
+        br{
+            display: none;
+        }
+    }
+    .vacancy-card-button {
+        padding: 5px;
+        border: 2px solid  #337BEF !important;
+        display: block;
+        opacity: 1 !important;
+    }
+    .vacancy-card-button svg path  {
+        stroke:  #337BEF !important;
+    }
+    .vacancy-description , .logo-container,.vacancy-badge,.menu-items,.user-level ,.vacancy-lines,.vacancy-images{
+        display: none !important;
+    }
+
+
+
+    .vacnacy-modal-grid{
+        display: block !important;
+
+    }
+    .vacancy-modal-exit-button {
+        right: 0 !important;
+        left: auto;
+        margin-top:  9.3rem !important;
+    }
+
+    .modal-vacancy-main-title {
+        margin: 0;
+        font-size: 5rem;
+    }
+
+    .vacancy-about-wrapper {
+        gap: 3em;
+
+    }
+
+    .modal-vacancy-main-description {
+        font-size: 1.95rem;
+    }
+
+    .modal-desc  {
+        border-top:none;
+        padding:  0;
+    }
+    .modal-name-vacancy {
+        font-size: 3rem;
+    }
+    .modal-about-criterion-list  {
+        gap: 0;
+    }
+
+    .modal-about-criterion-title {
+        font-size: 2.3rem;
+    }
+
+    .modal-about-criterion-list p{
+        font-size: 2rem;
+    }
+
+    .modal-about-li-circle {
+        padding: 6px;
+    }
+
+    .modal-criterion-part-line-hr {
+        border-width: 1px;
+    }
+
+    .modal-desc input {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .modal-desc input::placeholder {
+        font-size: 2rem;
+    }
+    .modal-name {
+        font-size: 3rem;
+        border-top: 1px solid #050c1a28;
+        margin-top: 3em;
+    }
+
+    .vacancy-first-name {
+        border-width: 0;
+        margin: 0;
+    }
+
+    .vacancy-title {
+        transform: translate(0,0) !important;
+        opacity: 1 !important;
+    }
+
+    .input-file-text {
+        font-size: 1.8rem;
+    }
+
+    .input-file-btn {
+        padding: 10px 15px;
+    }
+    .vacancy-modal{
+        width: 100%;
+    }
+    .modal-vacancy-main-description{
+        width: auto;
+        margin-left: 0;
+    }
+    .vacancy-modal-content .mobile-project-pointer{
+        padding: 10px 0;
+    }
+    .vacnacy-modal-grid{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    /* .vacancy-modal-content{
+        padding: 0 2rem;
+    } */
+    .vacancy-modal-button-wrapper {
+        flex-direction:column-reverse ;
+    }
+    .modal-submit-button {
+        font-size: 1.8rem;
+    }
+    .modal-desc{
+        padding: 0 2rem;
+    }
+    .modal-name{
+        width: 100%;
+    }
+    .vacancy-modal-content .mobile-project-pointer{
+        padding: 2rem;
+    }
+    .modal-name{
+        padding: 2rem;
+    }
+    .modal-inputs{
+        width: auto;
+    }
+    .contacts{
+        display: block;
+    }
+    .contacts-title{
+        font-size: 40px;
+    }
+    .contact-section{
+        height: 100% !important;
+    }
+    .contacts-conteiner{
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .contact-section-mini{
+        height: 100% !important;
+    }
+ }
+
+
+ 

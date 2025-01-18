@@ -1,0 +1,324 @@
+.blue {
+  color: #337bef;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120vh;
+  z-index: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@media (max-height: 700px) {
+  .header {
+    height: 130vh;
+  }
+}
+.header-cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/projects.webp");
+  z-index: 0;
+}
+.header-cover-white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff90;
+  z-index: 1;
+}
+.header-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #050c1ad9;
+  z-index: 2;
+}
+
+.container-name {
+  position: absolute;
+  top: 50%;
+  left: -16.5%;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 9.687rem;
+  font-weight: 700;
+  line-height: 13.233rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.04;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+.main {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6%;
+  height: 90%;
+  width: 90rem;
+  padding: 2rem;
+  z-index: 4;
+}
+@media (max-height: 700px) {
+  .main {
+    gap: 4%;
+  }
+}
+.breadcrumbs {
+  height: 20%;
+}
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  width: 76.312rem;
+  font-family: "Roboto";
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 5.85rem;
+  letter-spacing: -0.125rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-box {
+}
+.number {
+  width: 74.625rem;
+}
+.number img {
+  width: 100%;
+}
+.compass-parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.compass {
+  position: relative;
+  width: 40.062rem;
+  height: 40.062rem;
+}
+.compass img {
+  width: 100%;
+  height: 100%;
+}
+.radar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.radar .beam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(51, 123, 239, 1),
+    rgba(51, 123, 239, 0)
+  );
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+  transform-origin: 50% 50%;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.radar .dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: blink 1s infinite alternate;
+}
+
+.radar .dot-blue {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #337bef;
+  border-radius: 50%;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.dot1 {
+  top: 30%;
+  left: 40%;
+}
+.dot2 {
+  top: 60%;
+  left: 70%;
+  animation-delay: 0.5s;
+}
+.dot3 {
+  top: 80%;
+  left: 20%;
+  animation-delay: 1s;
+}
+
+.dot4 {
+  bottom: 30%;
+  right: 40%;
+}
+
+.dot5 {
+  bottom: 60%;
+  right: 60%;
+  animation-delay: 0.5s;
+}
+
+.dot6 {
+  bottom: 70%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.dot7 {
+  top: 50%;
+  left: 40%;
+  animation-delay: 0.5s;
+}
+
+.dot8 {
+  top: 20%;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.dot9 {
+  top: 15%;
+  left: 10%;
+  animation-delay: 1s;
+}
+
+.dot10 {
+  top: 50%;
+  left: 50%;
+  animation-delay: 0.5s;
+}
+
+.dot11 {
+  top: 40%;
+  left: 60%;
+  animation-delay: 1s;
+}
+
+.dot12 {
+  top: 35%;
+  left: 20%;
+  animation-delay: 0.5s;
+}
+
+.dot13 {
+  top: 55%;
+  left: 17%;
+  animation-delay: 0.5s;
+}
+
+.dot14 {
+  top: 40%;
+  left: 15%;
+  animation-delay: 0.5s;
+}
+
+.dot15 {
+  top: 35%;
+  left: 15%;
+  animation-delay: 1s;
+}
+
+.dot12 {
+  top: 35%;
+  left: 40%;
+  animation-delay: 0.5s;
+}
+
+.main-btn {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.main-btn a {
+  width: 37.562rem;
+  height: 4.687rem;
+  background: #337bef;
+  cursor: pointer;
+}
+.main-btn button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #ffffff;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: center;
+  border: none;
+}
+
+/* contacts */
+.contacts {
+  height: 90vh !important;
+}
+
+.contact-section {
+  height: 100% !important;
+}
+
+.contact-box {
+  margin-top: 2rem !important;
+}
+.contact-section-mini {
+  height: 100% !important;
+}
+.contacts-conteiner {
+  height: 100% !important;
+}

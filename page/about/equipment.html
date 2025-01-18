@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/title.css" />
+    <link rel="stylesheet" href="../../styles/vacancy-page.css">
+    <link rel="stylesheet" href="../../styles/breadcrumbs.css" />
+    <link rel="stylesheet" href="../../styles/menu.css" />
+    <link rel="stylesheet" href="../../styles/activity-page.css" />
+    <link rel="stylesheet" href="../../styles/equipment-page.css" />
+    <link rel="stylesheet" href="../../styles/map.css" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <!-- CSS для Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"
+    />
+
+    <!-- JS для Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <div class="progress-text">0%</div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="menu-logo">
+        <img
+          src="../../assets/icons/border-logo.svg"
+          alt=""
+          class="menu-logo-img"
+        />
+      </div>
+      <div class="user-level">
+        <div class="header-level">
+          <p>Оборудование</p>
+          <hr />
+        </div>
+        <div class="about-level">
+          <p>Футер</p>
+          <hr />
+        </div>
+      </div>
+      <div class="hero">
+        <div class="hero-lines">
+          <div class="top-line-wrapper">
+            <hr  class="top-line-wrapper-hr"/>
+          </div>
+          <div class="left-line-wrapper">
+            <hr class="left-line-wrapper-hr"/>
+          </div>
+          <div class="right-line-wrapper">
+            <hr class="right-line-wrapper-hr" />
+          </div>
+          <div class="middle-line-wrapper">
+            <hr class="middle-line-wrapper-hr"/>
+          </div>
+        <div class="badge ground-badge">
+          <h2>О НАС</h2>
+        </div>
+        <div class="hero-center-container panel">
+          <div class="mobile-project-pointer">
+            <div class="mobile-project-logo">
+                <p>Проекты</p>
+                <a href="/">
+                  <img src="../../assets/icons/Logo-blue.svg" alt="">
+                </a>
+              </div>
+             <hr>
+            </div>
+          <div class="panel">
+            <div class="breadcrumbs">
+              <div id="breadcrumbs"></div>
+            </div>
+            <div class="main-title title equipment-title">
+              <p>ОБОРУДОВАНИЕ</p>
+            </div>
+          </div>
+          <div class="news-container">
+            <div class="news-tab equipment-tabs">
+              <div class="tab-mobile-btn" data-aos="fade-up" data-aos-duration="1000">
+                <span>Открыть фильтры</span>
+                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6.16699" y="6.16669" width="9.25" height="10.7917" stroke="white" stroke-width="1.54167" />
+                  <rect x="6.16699" y="23.125" width="9.25" height="7.70833" stroke="white" stroke-width="1.54167" />
+                  <rect x="21.583" y="6.16669" width="9.25" height="7.70833" stroke="white" stroke-width="1.54167" />
+                  <rect x="21.583" y="20.0417" width="9.25" height="10.7917" stroke="white" stroke-width="1.54167" />
+                </svg>
+                <svg class="close" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="7.5" y1="7.5" x2="29.5" y2="29.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="29.5" y1="7.5" x2="7.5" y2="29.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="tabs" data-aos="fade-up" data-aos-duration="1000">
+                <div class="tab active" data-tab="news1">
+                  <p class="news-count">[23]</p>
+                  <p class="category-title">Все</p>
+                </div>
+                <div class="tab" data-tab="news2">
+                  <p class="news-count">[13]</p>
+                  <p class="category-title">Суша</p>
+                </div>
+                <div class="tab" data-tab="news3">
+                  <p class="news-count">[6]</p>
+                  <p class="category-title">Акватория</p>
+                </div>
+                <div class="tab sub" data-tab="news4">
+                  <p class="category-title">МАГНИТОМЕТОР</p>
+                  <p class="news-count">[4]</p>
+                </div>
+                <div class="tab sub" data-tab="news5">
+                  <p class="category-title">ГИДРОЛОКАТОР</p>
+                  <p class="news-count">[3]</p>
+                </div>
+                <div class="tab sub" data-tab="news6">
+                  <p class="category-title">СПУТНИКОВАЯ НАВИГАЦИЯ</p>
+                  <p class="news-count">[2]</p>
+                </div>
+                <div class="tab sub" data-tab="news7">
+                  <p class="category-title">ПОДВОДНАЯ НАВИГАЦИЯ</p>
+                  <p class="news-count">[1]</p>
+                </div>
+                <div class="tab sub small" data-tab="news8">
+                  <p class="category-title">ТПА</p>
+                  <p class="news-count">[2]</p>
+                </div>
+                <div class="tab sub small" data-tab="news9">
+                  <p class="category-title">СУДА</p>
+                  <p class="news-count">[3]</p>
+                </div>
+              </div>
+              <div
+                class="tab-content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <div class="tab-item" id="news1">
+                  <div class="equipments-cards">
+                    <div class="equipment-card equipment-card-1">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Металлодетектор FEREX 4.032 API </h2>
+                          <p>
+                            Ручной металлодетектор FEREX 4.032 API – современный металлодетектор, предназначенный для поиска и обнаружения предметов, при проведении работ по обследованию территории. Глубина обнаружения в грунте – до 6 м
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+
+                      <img class="equipment-img" src="../../assets/images/equipment-1.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-2">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Металлодетектор Vallon <br>
+                            Vallon VXС1 </h2>
+                          <p>
+                            Ручной металлодетектор Vallon VXC1 – современный металлодетектор, предназначенный для поиска и обнаружения предметов, при проведении работ по обследованию территории. Глубина обнаружения в грунте – до 6 м.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+
+                      <img class="equipment-img" src="../../assets/images/equipment-2.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-3">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Vallon EL1302 А1 / EL1302D2 </h2>
+                          <p>
+                            Ручной металлодетектор Vallon EL1302 А1 / EL1302D2 – современный металлодетектор, предназначенный для поиска и обнаружения предметов, при проведении работ по обследованию территории. Глубина обнаружения в грунте – до 6 м.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+
+                      <img class="equipment-img" src="../../assets/images/equipment-3.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-4">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Металлодетектор ALFAMARINE 5000 </h2>
+                          <p>
+                            Ручной металлодетектор ALFAMARINE 5000– современный металлодетектор, предназначенный для поиска и обнаружения предметов, при проведении работ по обследованию территории. Глубина обнаружения в грунте – до 1.8 м.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+
+                      <img class="equipment-img" src="../../assets/images/equipment-4.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-5">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Миноискатели ИМП-2К </h2>
+                          <p>
+                            Ручной миноискатель ИМП-2К – современный миноискатель, предназначенный для поиска и обнаружения предметов, при проведении работ по обследованию территории. Глубина обнаружения до 0,4 м
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+
+                      <img class="equipment-img" src="../../assets/images/equipment-5.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-6">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Буксируемый магнитометр Marine <br> magnetics SeaSpy2 </h2>
+                          <p>
+                            Современный морской магнитометр, работающий на эффекте Оверхаузера предназначенный для выполнения геофизических, геотехнических и поисковых работ на акватории. Прибор позволяет с прецизионной точностью измерять модуль вектора магнитного поля Земли (МПЗ).
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+
+                      <img class="equipment-img" src="../../assets/images/equipment-6.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-7">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Гидролокатор бокового обзора С- <br> МАХ СМ2 </h2>
+                          <p>
+                            Буксируемый гидролокатор бокового обзора — это гидроакустический прибор, основанный на принципе эхолокации, используемый для получения изображения морского дна, поисковых работ. Рабочая частота 325/780 кГц.  
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+
+                      <img class="equipment-img" src="../../assets/images/equipment-7.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-8">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Профилограф Bathy 2010 </h2>
+                          <p>
+                            Bathy 2010 — донный профилограф высокого разрешения производства компании SyQuest Technology Inc. (США). Предназначен для геофизических морских работ на больших глубинах, в прибрежных водах и открытом море.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-8.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-9">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Морские магнитометры MariMag </h2>
+                          <p>
+                            Современный морской магнитометр, работающий на эффекте Оверхаузера предназначенный для выполнения геофизических, геотехнических и поисковых работ на акватории. Прибор позволяет с прецизионной точностью измерять модуль вектора магнитного поля Земли (МПЗ).
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-9.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-10">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Гидролокатор бокового обзора <br> H5se7 </h2>
+                          <p>
+                            H5se7 - ультракомпактный гидролокатор бокового обзора (ГБО) сверхвысокого разрешения, совмещенный с промерным эхолотом (Эл).
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-10.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Спутниковая высокоточная система определения места судна GNSS Trimble MPS865</h2>
+                          <p>
+                            GNSS Trimble MPS865- морская спутниковая навигационная система, обеспечивает точность позиционирования до 0,3 м.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-11.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>USBL Zima</h2>
+                          <p>
+                            Гидроакустическая ультракороткобазисная (УКБ) навигационная система. Предназначена для определения местоположения подводных объектов
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-12.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Спутниковая высокоточная система определения места судна GNSS Trimble MPS865</h2>
+                          <p>
+                            GNSS Trimble MPS865- морская спутниковая навигационная система, обеспечивает точность позиционирования до 0,3 м.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-13.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>ТПА осмотрового класса Н300 МК2</h2>
+                          <p>
+                            Телеуправляемый подводный аппарат (ТПА) H300 предназначен для проведения осмотровых, исследовательских и лёгких подводно-технических работ на глубинах до 300 м. Оснащен мощным функциональным манипулятором, навигационным гидролокатором.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-14.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Гидрографический катер <br> «Искатель»</h2>
+                          <p>
+                            Гидрографический катер «Искатель» предназначен для магнитометрической и гидролокационной съемок, имеет специально оборудованную штангу для крепления многолучевого эхолота.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-15.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Телеуправляемый подводный <br> аппарат Смартдайв-150АТ</h2>
+                          <p>
+                            ТПА "Смартдайв-150АТ» предназначен для проведения осмотровых, исследовательских и лёгких подводно-технических работ на глубинах до 150 м.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-16.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Судно обеспечения водолазных <br> работ «Филин»</h2>
+                          <p>
+                            Судно обеспечения водолазных работ «Филин» предназначен для проведения водолазных работ. На борту располагается водолазная станция, а также установлена лебедка для подъема затонувших объектов. 
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-17.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Телеуправляемый подводный <br> аппарат CHASING M2 PRO</h2>
+                          <p>
+                            Легкий и компактный дрон, предназначенный для исследования морской среды, обследования подводных структур, поиска и спасения, а также съёмки и видеозаписи под водой.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-18.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Привлечение научно- <br> исследовательских судов</h2>
+                          <p>
+                            Наша компания активно сотрудничает с организациями, которые предоставляют нам научно-исследовательские суда, для проведения работ в труднодоступных акваториях. 
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-19.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Морской горизонтальный <br> поперечный градиентометр <br> MariMag HTG</h2>
+                          <p>
+                            MariMag HTG – современный морской горизонтальный поперечный градиентометр, работающий на эффекте Оверхаузера предназначенный для выполнения геофизических, геотехнических и поисковых работ на акватории.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-20.webp" alt="">
+                    </div>
+                    <div class="equipment-card equipment-card-11">
+                      <div class="equipment-wrapper">
+                        <div class="equipment-text">
+                          <h2>Vallon VX1</h2>
+                          <p>
+                            Ручной магнетометр Vallon VX1 – современный магнетометр, предназначенный для уточнения местоположения объекта, при проведении водолазных работ.
+                          </p>
+                        </div>
+                        <div class="equipment-button-wrapper">
+                          <button class="hero-button-detais water-details">Подробнее</button>
+                        </div>
+                      </div>
+                      <img class="equipment-img" src="../../assets/images/equipment-21.webp" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-item" id="news2"></div>
+                <div class="tab-item" id="news3"></div>
+                <div class="tab-item" id="news4"></div>
+                <div class="tab-item" id="news5"></div>
+                <div class="tab-item" id="news6"></div>
+                <div class="tab-item" id="news7"></div>
+                <div class="tab-item" id="news8"></div>
+                <div class="tab-item" id="news9"></div>
+              </div>
+            </div>
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="vacancy-modal equipment-modal">
+    <div class="vacancy-modal-content">
+      <button class="vacancy-modal-exit-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="23"
+          viewBox="0 0 24 23"
+          fill="none"
+        >
+          <line
+            x1="1.40633"
+            y1="1.04875"
+            x2="22.6195"
+            y2="22.262"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            x1="22.6173"
+            y1="1.0489"
+            x2="1.40406"
+            y2="22.2621"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+      <div class="modal-wrapper">
+        <div>
+          <h2>Буксируемый магнитометр SEA SPAY 2 MARINE MAGNETIC</h2>
+          <p>Для обнаружения прецессии рабочее вещество повергают интенсивной поляризации внешним магнитным полем H, примерно перпендикулярным к магнитному полю Bext. При этом происходит преимущественная ориентация магнитных моментов протонов по направлению приложенного поля. Поле H создают электрическим током, пропускаемым через специальную катушку, окружающую рабочее вещество. После быстрого выключения тока поляризации результирующий вектор ядерного намагничения начинает прецессировать вокруг поля Bext, наводя в катушке ЭДС в виде затухающей синусоиды. Продолжительность поляризации и измерения определяется временем соответственно продольной Т1 и поперечной Т2 релаксации протонсодержащего вещества.</p>
+        </div>
+        <div class="modal-blueprint">
+          <img src="../../assets/images/modal-equipment-blueprint-1.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <!-- contacts -->
+    <div class="contacts panel last-section">
+      <div id="success-modal">
+        <div class="contacts-modal-content">
+          <div class="contacts-modal-title">
+            <p><span class="blue">Спасибо</span> за заявку</p>
+          </div>
+          <div class="contacts-modal-subtitle mobil-none">Мы с вами свяжемся в ближайшее время</div>
+          <div class="contacts-modal-subtitle web-none">
+            Мы перезвоним вам в течение 30 минут, а пока что можно посмотреть новые статьи о работе компании в нашем
+            блоге:
+          </div>
+          <button onclick="closeModal()" class="mobil-none">Закрыть</button>
+          <button onclick="closeModal()" class="web-none">Перейти в блог</button>
+        </div>
+      </div>
+      <div id="modal-overlay"></div>
+      <div class="menu-logo" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out"></div>
+      <div class="contact-section"></div>
+      <div class="contact-section-mini"></div>
+
+      <div class="mobile-name">
+        <p>Контакты</p>
+        <img src="../../assets/icons/Logo.svg" alt="logo" />
+      </div>
+      <div class="contacts-conteiner">
+        <div class="for-lines">
+          <div class="animation-lines" id="animatedLines">
+            <div class="top-line">
+              <hr />
+            </div>
+            <div class="bottom-line">
+              <hr />
+            </div>
+            <div class="horizontal-line">
+              <hr />
+            </div>
+            <div class="left-line">
+              <hr />
+            </div>
+            <div class="right-line">
+              <hr />
+            </div>
+            <div class="vertical-line">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <div class="contacts-title">
+            <div class="title">
+              <p>Вы всегда</p>
+            </div>
+            <div class="parted-title title">
+              <p>можете</p>
+              <p class="blue">связаться</p>
+            </div>
+            <div class="title">
+              <p class="blue">с нами!</p>
+            </div>
+          </div>
+          <div class="inline-item">
+            <div class="contacts-menu" data-aos="fade" data-aos-duration="500">
+              <div class="contacts-menu-title">Меню</div>
+              <div class="contacts-menu-block">
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Проекты</a></li>
+                    <li><a href="">Оборудование</a></li>
+                  </ul>
+                </div>
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-info" data-aos="fade" data-aos-duration="500">
+              <div class="contacts-info-title">Контакты</div>
+              <div class="contacts-info-box">
+                <ul>
+                  <li>
+                    <p>195220, г. Санкт-Петербург, пр. Науки, д. 17, к. 2, помещение 52Н.</p>
+                  </li>
+                  <li><a href="tel:+78124974182">+7 (812) 497-41-82</a></li>
+                  <li>
+                    <div class="inline-item">
+                      <p>+7 (812) 497-41-83</p>
+                      <p class="blue">*Факс</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-mobile">
+            <div class="mobile-widgets">
+              <div class="mobile-conacts-box">
+                <div class="rectangle-parent-white">
+                  <div class="animated-rectangle-white"></div>
+                </div>
+                <div
+                  class="mobile-conacts-text"
+                  data-aos="fade"
+                  data-aos-duration="500"
+                  data-aos-delay="2000"
+                  data-aos-offset="-200"
+                >
+                  <p>Достаточно просто заполнить форму</p>
+                </div>
+              </div>
+              <button
+                class="contact-us-mobile"
+                data-aos="fade"
+                data-aos-duration="500"
+                data-aos-delay="2000"
+                data-aos-offset="-200"
+              >
+                Связаться
+              </button>
+            </div>
+            <div class="contacts-menu-mobile" data-aos="fade" data-aos-duration="500" data-aos-offset="-200">
+              <div class="contacts-menu-title">Меню</div>
+              <div class="contacts-menu-block">
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Проекты</a></li>
+                    <li><a href="">Оборудование</a></li>
+                  </ul>
+                </div>
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-info-mobile" data-aos="fade" data-aos-duration="500" data-aos-offset="-200">
+              <div class="contacts-info-title">Контакты</div>
+              <div class="contacts-info-box">
+                <ul>
+                  <li>
+                    <p>195220, г. Санкт-Петербург, пр. Науки, д. 17, к. 2, помещение 52Н.</p>
+                  </li>
+                  <li><a href="tel:+78124974182">+7 (812) 497-41-82</a></li>
+                  <li>
+                    <div class="inline-item">
+                      <p>+7 (812) 497-41-83</p>
+                      <p class="blue">*Факс</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+                  </li>
+                  <li>
+                    <a href="">Политика обработки персональных данных</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box contact-box-form">
+          <div class="contacts-form hidden" id="mobile-contact-form">
+            <img src="./assets/icons/close-blue.svg" alt="close-icon" class="close-blue" />
+            <form id="contacts-form">
+              <div class="form-inputs">
+                <input type="text" id="name" placeholder="Ваше имя*" required />
+                <input type="text" id="phone" placeholder="Телефон" required />
+              </div>
+              <textarea name="comment" id="comment" placeholder="Комментарий"></textarea>
+              <div class="contacts-checkbox-container">
+                <input type="checkbox" id="checkbox-1" name="checkbox-1" style="width: 1.5rem" required />
+                <label for="checkbox-1" class="checkbox-1 mobil-none">
+                  <p>
+                    Я ознакомился с
+                    <a href="" class="blue"> Политикой в отношении обработки персональных данных </a>
+                    и соглашаюсь на обработку моих персональных данных в соответствии с 
+                    <a href="" class="blue"> условиями</a>
+                  </p>
+                </label>
+                <label for="checkbox-1" class="checkbox-1 web-none">
+                  <p>
+                    Я ознакомился с 
+                    <a href="">Политикой в отношении обработки</a>
+                  </p>
+                  <p>
+                    <a href="">персональных данных </a>
+                    и соглашаюсь на обработку моих
+                  </p>
+                  <p>
+                    персональных данных в соответствии с
+                    <a href=""> условиями</a>
+                  </p>
+                </label>
+              </div>
+              <div class="contacts-send">
+                <button type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="contacts-footer"
+        data-aos="fade"
+        data-aos-duration="500"
+        data-aos-delay="2000"
+        data-aos-offset="-1000"
+      >
+        <div class="contacts-footer-box">
+          <p>© 2011 АО ИСКАТЕЛЬ</p>
+          <a href="" class="mobil-none">Политика обработки персональных данных</a>
+        </div>
+        <div class="contacts-footer-box">
+          <a href="">Разработка сайта</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <button class="menu-items">
+        <p class="menu-title">Меню</p>
+        <div class="menu-image">
+          <img class="menu-img" src="../assets/icons/menu.svg" alt="" />
+        </div>
+      </button>
+    </div>
+    <div class="opened-menu">
+      <div class="opened-menu-content">
+        <div class="opened-menu-subblock">
+          <div class="opened-menu-widget">
+            <div class="opened-menu-btn">
+              <button>
+                <p>Закрыть</p>
+                <img src="../assets/icons/close.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="opened-menu-contacts">
+            <div class="opened-menu-contacts-box">
+              <div class="opened-menu-contacts-title"><p>Почта</p></div>
+              <div class="opened-menu-contacts-text">
+                                  <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+
+              </div>
+            </div>
+            <div class="opened-menu-contacts-box">
+              <div class="opened-menu-contacts-title"><p>Телефон</p></div>
+              <div class="opened-menu-contacts-text">
+                <p>8 (812) 497-41-82</p>
+              </div>
+            </div>
+            <div class="opened-menu-contacts-box">
+              <div class="opened-menu-contacts-title"><p>Факс</p></div>
+              <div class="opened-menu-contacts-text">
+                <p>8 (812) 497-41-83</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opened-menu-block">
+          <div class="opened-menu-links">
+            <ul>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Проекты</a></li>
+              <li><a href="">Оборудование</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Медиа</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="opened-menu-sublinks">
+            <div class="opened-menu-sublinks-box">
+              <ul>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Виды деятельности</a></li>
+                <li><a href="#">Регионы</a></li>
+                <li><a href="#">Политика</a></li>
+              </ul>
+            </div>
+            <div class="opened-menu-sublinks-box">
+              <ul>
+                <li><a href="#">Специалисты</a></li>
+                <li><a href="#">Как мы работаем</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Вопросы и ответы </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="opened-menu-video">
+        <video muted loop class="opened-menu-back">
+          <source src="../../assets/video/2.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="icon-wrapper">
+          <img
+            class="big-logo"
+            src="../../assets/icons/big-white-logo.svg"
+            alt="Menu Icon"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/breadcrumbs.js"></script>
+    <script src="../../js/equipment.js"></script>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tabButton = document.querySelector('.tab-mobile-btn');
+    const tabs = document.querySelector('.tabs');
+    const tabButtonText = tabButton.querySelector('span');
+
+    if (tabButton && tabs) {
+        tabButton.addEventListener('click', () => {
+            if (tabButton.classList.contains('open')) {
+                // Закрытие вкладки
+                tabs.style.maxHeight = null;
+                tabButtonText.textContent = 'Открыть фильтры';
+                tabButton.classList.remove('open');
+            } else {
+                // Открытие вкладки
+                const scrollHeight = tabs.scrollHeight + 'px';
+                tabs.style.maxHeight = scrollHeight;
+                tabButtonText.textContent = 'Закрыть фильтры';
+                tabButton.classList.add('open');
+            }
+        });
+    }
+});
+
+    </script>
+  </body>
+</html>

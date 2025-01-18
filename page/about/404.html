@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/404.css" />
+    <link rel="stylesheet" href="../../styles/menu.css" />
+    <link rel="stylesheet" href="../../styles/title.css" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <div class="progress-text">0%</div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <!-- header -->
+      <div class="header">
+        <div class="container-name">Главная</div>
+        <div class="header-cover-image"></div>
+        <div class="header-cover-white"></div>
+        <div class="header-cover"></div>
+        <div
+          class="menu-logo"
+          data-aos="fade"
+          data-aos-duration="1000"
+          data-aos-delay="2000"
+          data-aos-easing="ease-in-out"
+        >
+          <img src="../../assets/icons/border-logo-white.svg" alt="" class="menu-logo-img" />
+        </div>
+        <div class="main">
+          <div class="for-lines">
+            <div class="animation-lines" id="animatedLines">
+              <div class="top-line">
+                <hr />
+              </div>
+              <div class="bottom-line">
+                <hr />
+              </div>
+              <div class="left-line">
+                <hr />
+              </div>
+              <div class="right-line">
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="main-title title">
+            <p>Страница</p>
+            <p class="blue">не найдена</p>
+          </div>
+          <div class="main-box">
+            <div class="number" data-aos="fade-up" data-aos-duration="1000">
+              <img src="../../assets/icons/four.png" alt="four" />
+            </div>
+            <div class="compass-parent">
+              <div class="compass">
+                <img src="../../assets/icons/compass.svg" alt="four" />
+                <div class="radar">
+                  <div class="beam"></div>
+                  <div class="dot dot1"></div>
+                  <div class="dot-blue dot2"></div>
+                  <div class="dot dot3"></div>
+                  <div class="dot-blue dot4"></div>
+                  <div class="dot-blue dot5"></div>
+                  <div class="dot-blue dot6"></div>
+                  <div class="dot dot7"></div>
+                  <div class="dot-blue dot8"></div>
+                  <div class="dot-blue dot9"></div>
+                  <div class="dot dot10"></div>
+                  <div class="dot-blue dot11"></div>
+                  <div class="dot-blue dot12"></div>
+                  <div class="dot-blue dot13"></div>
+                  <div class="dot dot14"></div>
+                  <div class="dot-blue dot15"></div>
+                  <div class="dot-blue dot16"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-btn" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="500" data-aos-offset="-100">
+            <a href="../../index.html">
+              <button>Вернуться на главную</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- contacts -->
+      <div class="contacts panel">
+        <div id="success-modal">
+          <div class="contacts-modal-content">
+            <div class="contacts-modal-title">
+              <p><span class="blue">Спасибо</span> за заявку</p>
+            </div>
+            <div class="contacts-modal-subtitle mobil-none">Мы с вами свяжемся в ближайшее время</div>
+            <div class="contacts-modal-subtitle web-none">
+              Мы перезвоним вам в течение 30 минут, а пока что можно посмотреть новые статьи о работе компании в нашем
+              блоге:
+            </div>
+            <button onclick="closeModal()" class="mobil-none">Закрыть</button>
+            <button onclick="closeModal()" class="web-none">Перейти в блог</button>
+          </div>
+        </div>
+        <div id="modal-overlay"></div>
+        <div class="menu-logo" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out"></div>
+        <div class="contact-section"></div>
+        <div class="contact-section-mini"></div>
+
+        <div class="mobile-name">
+          <p>Контакты</p>
+          <img src="./assets/icons/Logo.svg" alt="logo" />
+        </div>
+        <div class="contacts-conteiner">
+          <div class="for-lines">
+            <div class="animation-lines" id="animatedLines">
+              <div class="top-line">
+                <hr />
+              </div>
+              <div class="bottom-line">
+                <hr />
+              </div>
+              <div class="horizontal-line">
+                <hr />
+              </div>
+              <div class="left-line">
+                <hr />
+              </div>
+              <div class="right-line">
+                <hr />
+              </div>
+              <div class="vertical-line">
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="contacts-title">
+              <div class="title">
+                <p>Вы всегда</p>
+              </div>
+              <div class="parted-title title">
+                <p>можете</p>
+                <p class="blue">связаться</p>
+              </div>
+              <div class="title">
+                <p class="blue">с нами!</p>
+              </div>
+            </div>
+            <div class="inline-item">
+              <div class="contacts-menu" data-aos="fade" data-aos-duration="500">
+                <div class="contacts-menu-title">Меню</div>
+                <div class="contacts-menu-block">
+                  <div class="contacts-menu-box">
+                    <ul>
+                      <li><a href="">О компании</a></li>
+                      <li><a href="">Услуги</a></li>
+                      <li><a href="">Проекты</a></li>
+                      <li><a href="">Оборудование</a></li>
+                    </ul>
+                  </div>
+                  <div class="contacts-menu-box">
+                    <ul>
+                      <li><a href="">Новости</a></li>
+                      <li><a href="">Медиа</a></li>
+                      <li><a href="">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts-info" data-aos="fade" data-aos-duration="500">
+                <div class="contacts-info-title">Контакты</div>
+                <div class="contacts-info-box">
+                  <ul>
+                    <li>
+                      <p>195220, г. Санкт-Петербург, пр. Науки, д. 17, к. 2, помещение 52Н.</p>
+                    </li>
+                    <li><a href="tel:+78124974182">+7 (812) 497-41-82</a></li>
+                    <li>
+                      <div class="inline-item">
+                        <p>+7 (812) 497-41-83</p>
+                        <p class="blue">*Факс</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-mobile">
+              <div class="mobile-widgets">
+                <div class="mobile-conacts-box">
+                  <div class="rectangle-parent-white">
+                    <div class="animated-rectangle-white"></div>
+                  </div>
+                  <div
+                    class="mobile-conacts-text"
+                    data-aos="fade"
+                    data-aos-duration="500"
+                    data-aos-delay="2000"
+                    data-aos-offset="-200"
+                  >
+                    <p>Достаточно просто заполнить форму</p>
+                  </div>
+                </div>
+                <button
+                  class="contact-us-mobile"
+                  data-aos="fade"
+                  data-aos-duration="500"
+                  data-aos-delay="2000"
+                  data-aos-offset="-200"
+                >
+                  Связаться
+                </button>
+              </div>
+              <div class="contacts-menu-mobile" data-aos="fade" data-aos-duration="500" data-aos-offset="-200">
+                <div class="contacts-menu-title">Меню</div>
+                <div class="contacts-menu-block">
+                  <div class="contacts-menu-box">
+                    <ul>
+                      <li><a href="">О компании</a></li>
+                      <li><a href="">Услуги</a></li>
+                      <li><a href="">Проекты</a></li>
+                      <li><a href="">Оборудование</a></li>
+                    </ul>
+                  </div>
+                  <div class="contacts-menu-box">
+                    <ul>
+                      <li><a href="">Новости</a></li>
+                      <li><a href="">Медиа</a></li>
+                      <li><a href="">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts-info-mobile" data-aos="fade" data-aos-duration="500" data-aos-offset="-200">
+                <div class="contacts-info-title">Контакты</div>
+                <div class="contacts-info-box">
+                  <ul>
+                    <li>
+                      <p>195220, г. Санкт-Петербург, пр. Науки, д. 17, к. 2, помещение 52Н.</p>
+                    </li>
+                    <li><a href="tel:+78124974182">+7 (812) 497-41-82</a></li>
+                    <li>
+                      <div class="inline-item">
+                        <p>+7 (812) 497-41-83</p>
+                        <p class="blue">*Факс</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+                    </li>
+                    <li>
+                      <a href="">Политика обработки персональных данных</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-box contact-box-form">
+            <div class="contacts-form hidden" id="mobile-contact-form">
+              <img src="./assets/icons/close-blue.svg" alt="close-icon" class="close-blue" />
+              <form id="contacts-form">
+                <div class="form-inputs">
+                  <input type="text" id="name" placeholder="Ваше имя*" required />
+                  <input type="text" id="phone" placeholder="Телефон" required />
+                </div>
+                <textarea name="comment" id="comment" placeholder="Комментарий"></textarea>
+                <div class="contacts-checkbox-container">
+                  <input type="checkbox" id="checkbox-1" name="checkbox-1" style="width: 1.5rem" required />
+                  <label for="checkbox-1" class="checkbox-1 mobil-none">
+                    <p>
+                      Я ознакомился с
+                      <a href="" class="blue"> Политикой в отношении обработки персональных данных </a>
+                      и соглашаюсь на обработку моих персональных данных в соответствии с 
+                      <a href="" class="blue"> условиями</a>
+                    </p>
+                  </label>
+                  <label for="checkbox-1" class="checkbox-1 web-none">
+                    <p>
+                      Я ознакомился с 
+                      <a href="">Политикой в отношении обработки</a>
+                    </p>
+                    <p>
+                      <a href="">персональных данных </a>
+                      и соглашаюсь на обработку моих
+                    </p>
+                    <p>
+                      персональных данных в соответствии с
+                      <a href=""> условиями</a>
+                    </p>
+                  </label>
+                </div>
+                <div class="contacts-send">
+                  <button type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="contacts-footer"
+          data-aos="fade"
+          data-aos-duration="500"
+          data-aos-delay="2000"
+          data-aos-offset="-1000"
+        >
+          <div class="contacts-footer-box">
+            <p>© 2011 АО ИСКАТЕЛЬ</p>
+            <a href="" class="mobil-none">Политика обработки персональных данных</a>
+          </div>
+          <div class="contacts-footer-box">
+            <a href="">Разработка сайта</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- global -->
+      <div class="menu" data-aos="fade" data-aos-duration="500" data-aos-delay="2000">
+        <button class="menu-items">
+          <p class="menu-title">Меню</p>
+          <div class="menu-image">
+            <img class="menu-img" src="../../assets/icons/menu-white.svg" alt="" />
+          </div>
+        </button>
+      </div>
+      <div class="opened-menu">
+        <div class="opened-menu-content">
+          <div class="opened-menu-subblock">
+            <div class="opened-menu-widget">
+              <div class="opened-menu-btn">
+                <button>
+                  <p>Закрыть</p>
+                  <img src="../../assets/icons/close.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="opened-menu-contacts">
+              <div class="opened-menu-contacts-box">
+                <div class="opened-menu-contacts-title"><p>Почта</p></div>
+                <div class="opened-menu-contacts-text">
+                  <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+                </div>
+              </div>
+              <div class="opened-menu-contacts-box">
+                <div class="opened-menu-contacts-title"><p>Телефон</p></div>
+                <div class="opened-menu-contacts-text">
+                  <p>8 (812) 497-41-82</p>
+                </div>
+              </div>
+              <div class="opened-menu-contacts-box">
+                <div class="opened-menu-contacts-title"><p>Факс</p></div>
+                <div class="opened-menu-contacts-text">
+                  <p>8 (812) 497-41-83</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="opened-menu-block">
+            <div class="opened-menu-links">
+              <ul>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Услуги</a></li>
+                <li><a href="">Проекты</a></li>
+                <li><a href="">Оборудование</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Медиа</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="opened-menu-sublinks">
+              <div class="opened-menu-sublinks-box">
+                <ul>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Виды деятельности</a></li>
+                  <li><a href="#">Регионы</a></li>
+                  <li><a href="#">Политика</a></li>
+                </ul>
+              </div>
+              <div class="opened-menu-sublinks-box">
+                <ul>
+                  <li><a href="#">Специалисты</a></li>
+                  <li><a href="#">Как мы работаем</a></li>
+                  <li><a href="#">Партнерам</a></li>
+                  <li><a href="#">Вопросы и ответы </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opened-menu-video">
+          <video muted loop class="opened-menu-back">
+            <source src="../../assets/video/2.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+          <div class="icon-wrapper">
+            <img class="big-logo" src="../../assets/icons/big-white-logo.svg" alt="Menu Icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/404.js"></script>
+    <script src="../../js/top-left.js"></script>
+  </body>
+</html>

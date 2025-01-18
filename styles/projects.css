@@ -1,0 +1,480 @@
+.texture-wrap {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  z-index: 0;
+}
+.texture-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/projects.webp");
+  background-size: cover;
+  z-index: 0;
+}
+
+.light-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.dark-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #050c1a;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+/* header */
+.breadcrumbs,
+.breadcrumbs a {
+  color: #050c1a73;
+}
+
+.breadcrumbs .active {
+  color: #337bef !important;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .header {
+    height: 20vh;
+    width: 90%;
+    margin: auto;
+  }
+}
+.container-name {
+  position: absolute;
+  top: 5%;
+  left: -16%;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 9.687rem;
+  font-weight: 700;
+  line-height: 13.233rem;
+  text-align: center;
+  color: #050c1a;
+  opacity: 0.04;
+  transform: rotate(90deg);
+}
+.main {
+  position: relative;
+  box-sizing: border-box;
+  width: 90rem;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 7.812rem;
+  font-weight: 700;
+  line-height: 7.968rem;
+  letter-spacing: -0.125;
+  text-align: left;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 45px;
+    line-height: 49.5px;
+  }
+}
+
+.main-title-little {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.156rem;
+  letter-spacing: -0.125;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* directions */
+.directions {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+.directions-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  width: 90rem;
+}
+.directions-card {
+  position: relative;
+  box-sizing: border-box;
+  width: 42.375rem;
+  height: 26.25rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.projects-count {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-align: center;
+  color: #050c1a73;
+}
+.directions-title {
+  font-family: "Roboto";
+  font-size: 4.375rem;
+  font-weight: 700;
+  line-height: 4.812rem;
+  letter-spacing: -0.9848020672798157px;
+  text-align: center;
+  background: linear-gradient(to right, #050c1a, #193b80, #050c1a);
+  -webkit-background-clip: text; /* Для поддержки в Webkit-браузерах (Chrome, Safari) */
+  background-clip: text;
+  color: transparent; /* Прозрачный цвет текста */
+}
+.directions-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20.375rem;
+  height: 20.25rem;
+}
+
+.directions-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.directions-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.directions-subtitle {
+  width: 18.75rem;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.523rem;
+  text-align: left;
+}
+.directions-link {
+}
+
+/* contacts */
+.contacts {
+  height: 90vh !important;
+}
+
+.contact-section {
+  height: 100% !important;
+}
+
+.contact-box {
+  margin-top: 2rem !important;
+}
+.contact-section-mini {
+  height: 100% !important;
+}
+.contacts-conteiner {
+  height: 100% !important;
+}
+
+/* projects */
+.projects {
+  position: relative;
+  box-sizing: border-box;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 10%;
+  z-index: 4;
+  padding-bottom: 100vh;
+}
+.container-name-projects {
+  position: absolute;
+  top: 0%;
+  left: -15.5%;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 9.687rem;
+  font-weight: 700;
+  line-height: 13.233rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.02;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+.projects-content {
+  position: relative;
+  box-sizing: border-box;
+  width: 90rem;
+  max-width: none !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.pined {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-project {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 100;
+}
+
+.second-project,
+.third-project,
+.last-project {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.last-project {
+  margin-bottom: 50vh;
+}
+
+.interactive {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+  height: 9.937rem;
+  width: 9.937rem;
+  border-radius: 50%;
+  border-right: 0.125rem dashed #337bef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interactive p {
+  font-family: "Manrope";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.195rem;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+.interactive img {
+  width: 0.703rem;
+  height: 1.406rem;
+}
+
+.projects-slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+  transition-property: transform;
+  border: 0.0625rem solid #e0e0e020;
+  display: block;
+  z-index: 20;
+}
+
+@media (max-width: 1024px) {
+  .projects-slide {
+    height: 100%;
+    width: 90vw;
+    margin: auto;
+    border: none;
+  }
+}
+
+.projects-text {
+}
+
+.projects-title {
+  position: relative;
+  font-family: "Roboto";
+  font-size: 7.812rem;
+  font-weight: 700;
+  line-height: 6.859rem;
+  letter-spacing: -0.5px;
+  text-align: left;
+  padding: 2rem 3rem;
+  color: white;
+  z-index: 1;
+}
+
+/* #00ffe5 */
+.projects-title-firts-stroke {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 55px;
+    line-height: 46.75px;
+  }
+  .projects-title-firts-stroke {
+    flex-direction: column;
+  }
+}
+.blue {
+  color: #337bef;
+}
+.projects-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50.06rem;
+  height: 28.56rem;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transition: ease 0.5s;
+}
+@media (max-width: 768px) {
+  .projects-img {
+    position: relative !important;
+    width: 100% !important;
+    margin: auto !important;
+    height: 50% !important;
+    z-index: 30 !important;
+    transform: translate(0, 0) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+.projects-img img {
+  position: relative;
+  transition: ease 0.5s;
+  cursor: pointer;
+  width: 100%;
+  z-index: 9998;
+}
+@media (max-width: 768px) {
+  .projects-img img {
+    position: absolute;
+    left: -50%;
+    top: 0;
+    height: 100%;
+    width: auto;
+    overflow: hidden !important;
+  }
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(0%, 0%) !important;
+}
+
+.projects-widgets {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  width: 100%;
+  border-top: 0.0625rem solid #e0e0e020;
+  z-index: 10;
+}
+
+.projects-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.0625rem solid #e0e0e020;
+  border-right: 0.0625rem solid #e0e0e020;
+  height: 100%;
+  width: 21.875rem;
+}
+@media (max-width: 768px) {
+  .projects-widgets {
+    position: relative;
+    height: 5%;
+    border: none;
+    margin-top: 30px;
+  }
+  .projects-more {
+    width: 100%;
+    margin: auto;
+    border: 0.0625rem solid #ffffff;
+  }
+}
+
+.projects-more a {
+  height: 100%;
+  width: 100%;
+}
+
+.projects-more button {
+  border: none;
+  background: none;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.projects-more button:hover {
+  background: #337bef;
+  color: #ffffff;
+}

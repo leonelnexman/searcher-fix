@@ -1,0 +1,690 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  background: url("../assets/images/partners-back.webp");
+}
+
+.main {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+  width: 90rem;
+  padding: 2rem;
+  z-index: 1;
+}
+.breadcrumbs {
+  height: 20%;
+}
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 76.312rem;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 5.85rem;
+  letter-spacing: -0.125rem;
+  text-align: center;
+  color: #ffffff;
+  height: 60%;
+}
+.main-subtitle {
+  box-sizing: border-box;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+.main-subtitle-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.rectangle-parent-white {
+  position: absolute;
+  top: 50%;
+  left: 100%; /* Начальное состояние - за пределами экрана */
+  transform: translate(0, -50%);
+  overflow: hidden;
+  width: 300px;
+  height: 6rem;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+}
+.animated-rectangle-white {
+  width: 300px; /* Изначально полный размер */
+  height: 70%;
+  background-color: #ffffff;
+  transition: width 1s ease;
+}
+.rectangle-parent-white.active {
+  left: 0; /* Сдвиг в исходное положение при активации */
+}
+
+.animated-rectangle-white.active {
+  width: 0.3rem; /* Изменение ширины при активации */
+}
+
+.main-subtitle-text {
+  font-family: "Roboto";
+  text-wrap: nowrap;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.318rem;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 2rem;
+}
+
+/* partners */
+.partners {
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.partners-line-box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-line-inner {
+  position: relative;
+  width: 90rem;
+  height: 50rem;
+}
+
+.marquee {
+  position: absolute;
+  top: 5%;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 100%;
+  transition: 1s;
+  z-index: 10;
+}
+.marquee-title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* flex-wrap: nowrap; */
+  white-space: nowrap;
+  width: fit-content;
+  padding-right: 5rem;
+}
+.marquee-title p {
+  font-family: "Roboto";
+  font-size: 9.937rem;
+  font-weight: 700;
+  line-height: 12.817rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.marquee-img {
+  width: 9.437rem;
+  height: 13.425rem;
+}
+
+.marquee-img img {
+  height: 100%;
+  width: 100%;
+}
+.blue {
+  color: #337bef;
+}
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 12.5%;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.partners-block {
+  box-sizing: border-box;
+  width: 90rem;
+  height: 45%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 0 3rem;
+}
+.partners-text {
+  width: fit-content;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+.partners-subtitle {
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.048rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.partners-description {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+.partners-swiper {
+  position: relative;
+  display: flex;
+  align-items: end;
+  height: 45%;
+  width: 100%;
+  z-index: 20;
+}
+.partners-swiper .swiper-container {
+  height: 26.25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.partners-swiper .swiper-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.partners-swiper .swiper-slide {
+  flex: 0 0 auto;
+  width: 43.125rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #337bef;
+}
+.partners-swiper .swiper-slide:last-child {
+  margin-left: 23.125rem;
+}
+
+.partners-swiper .swiper-slide img {
+  height: 60%;
+  width: 60%;
+}
+.partners-widgets {
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  width: 10rem;
+  background: #050c1a;
+  z-index: 10;
+}
+
+.partners-pagination {
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+.partners-swiper-pagination {
+  position: relative;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  width: 100%;
+}
+.partnerss-progress {
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  transform: translate(0, -50%);
+}
+
+.partners-swiper .swiper-pagination {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 3rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Montserrat";
+  font-size: "1.125rem";
+  font-weight: 400;
+  line-height: 1.371rem;
+  text-align: center;
+  color: #050c1a !important;
+}
+
+.partners-swiper .swiper-pagination-current {
+  color: #337bef !important;
+}
+.progress-line {
+  position: relative;
+  height: 0.125rem;
+  background-color: #050c1a;
+  width: 19.375rem;
+}
+
+.blue-bar {
+  position: absolute;
+  top: -0.0625rem;
+  left: 0;
+  height: 0.25rem;
+  background-color: #337bef;
+  width: 33.3%;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+/* company */
+.company {
+  position: relative;
+  height: 150vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.company-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  width: 90rem;
+  height: 100%;
+  transition: 1s;
+}
+.company-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.493rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #337bef;
+  text-transform: uppercase;
+}
+.company-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: end;
+}
+.company-block {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 66.5rem;
+}
+.company-box {
+  color: #050c1a;
+}
+.company-subtitle {
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.048rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.company-text {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+.company-video {
+  position: relative;
+  width: 66.5rem;
+  height: auto;
+  overflow: hidden;
+  transition: 1s;
+}
+.company-video video {
+  width: 100%;
+  height: auto;
+  transition: 1s;
+}
+.play-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #337bef;
+  width: 3.375rem;
+  height: 3.375rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-video.hidden {
+  display: none;
+}
+
+/* advantages */
+.advantages {
+  position: relative;
+  height: 280vh;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.advantages-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #050c1a;
+  opacity: 0.5;
+  z-index: 1;
+}
+.advantages-video-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Высота в 100% от высоты окна */
+  width: 100%;
+  overflow: hidden; /* Скрываем все, что выходит за пределы */
+}
+
+.advantages-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw; /* Ширина 100% от ширины окна */
+  height: 100vh; /* Высота 100% от высоты окна */
+  overflow: hidden;
+  transform: translate(-50%, -50%); /* Центрируем видео */
+  z-index: 0;
+}
+
+.advantages-video-el {
+  width: 100%; /* Заполнение 100% ширины */
+  height: 100%; /* Заполнение 100% высоты */
+  object-fit: cover; /* Видео сохраняет пропорции и не искажается */
+  z-index: 1;
+}
+.advantages-content {
+  position: relative;
+  width: 90rem;
+  height: 100%;
+  z-index: 3;
+}
+.advantages-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.493rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 50vh 1.5rem 0;
+}
+.advantages-main {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+.advantages-box {
+  height: 100%;
+  width: 30rem;
+  border-left: 0.0625rem solid #ffffff;
+  border-right: 0.0625rem solid #ffffff;
+  color: #ffffff;
+}
+.advantages-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  align-content: start;
+  gap: 1rem;
+  border-top: 0.0625rem solid #ffffff;
+  padding: 1rem;
+}
+.advantages-text1 {
+  margin-top: 155vh;
+}
+.advantages-subtitle {
+  font-family: "Manrope";
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.39rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.advantages-description {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+.advantages-text2 {
+  margin-top: 90vh;
+}
+.advantages-text3 {
+  margin-top: 120vh;
+}
+
+/* projects */
+.projects {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #ffffff;
+  margin-bottom: 100vh;
+}
+.projects-container {
+  position: relative;
+  height: 50rem;
+  width: 90rem;
+}
+.projects-text {
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+.projects-title-box {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.493rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.projects-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.blue {
+  color: #337bef;
+}
+.projects-description {
+  box-sizing: border-box;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.our-projects-block {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  z-index: 10;
+  background: #ffffff;
+  height: 46.87rem;
+  width: 100%;
+}
+.our-projects-block ul {
+  height: 100%;
+  width: 100%;
+}
+.our-projects-block ul li {
+  height: 10%;
+  width: 100%;
+  color: #050c1a;
+  transition: 0s;
+}
+
+.our-projects {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.our-projects-block ul li:hover .our-projects {
+  opacity: 1;
+}
+.our-projects-block ul li:hover {
+  background: #337bef !important;
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+.our-projects-block ul li p,
+.our-projects-block p:nth-child(1) {
+  transition: 0.1s !important;
+}
+
+.our-projects-block ul li p,
+.our-projects-block ul li p:hover,
+.our-projects-block p:nth-child(1) {
+  transition-delay: 0s !important;
+}
+
+.our-projects-inline-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border: 0.0625rem solid #00000020;
+}
+.our-projects-inline-items a {
+  color: #050c1a;
+}
+.our-projects-inline-items a:hover {
+  color: #ffffff;
+}
+.our-projects-image-box {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-projects-img {
+  width: 1.625rem;
+  height: 1.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-projects-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-projects-content-box {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.our-projects-content-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Manrope";
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+}
+.our-projects-content-title {
+  font-size: 1.125rem;
+  line-height: 1.536rem;
+  text-align: left;
+  font-weight: 600;
+}
+.our-projects-content-title p {
+  text-wrap: nowrap;
+}
+.our-projects-content-subtitle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-wrap: nowrap;
+}

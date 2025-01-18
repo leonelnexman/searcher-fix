@@ -1,0 +1,374 @@
+.hero {
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+}
+
+.hero-lines hr {
+  position: absolute;
+  border: none;
+  background-color: #e0e0e050;
+  z-index: -10;
+  transition: all 0.5s ease-in-out;
+}
+.top-line-wrapper hr {
+  width: 100vw;
+  height: 1.5px;
+  top: 6%;
+}
+.left-line-wrapper hr {
+  height: 100%;
+  width: 1.5px;
+  left: 13%;
+}
+.right-line-wrapper hr {
+  height: 100%;
+  width: 1.5px;
+  right: 13%;
+}
+
+.middle-line-wrapper hr {
+  height: 100%;
+  width: 1.5px;
+  right: 50%;
+}
+
+.hero-center-container {
+  width: 74%;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 9em;
+  display: flex;
+  flex-direction: column;
+}
+.main-title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 8.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  display: flex;
+  justify-content: center;
+}
+.left {
+  text-align: left !important;
+  padding: 0 3rem !important;
+}
+
+.hero-description {
+  font-family: "Manrope";
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-card-ground img {
+  width: 100%;
+}
+
+.hero-switch-card {
+  position: relative;
+  padding-top: 4em;
+  margin-bottom: 4em;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(50px);
+}
+
+.hero-card-description-card {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+.hero-card-title {
+  transition: all 0.3s ease-in-out;
+  font-size: 5rem;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-card-tilte-white {
+  align-self: flex-end;
+}
+
+.hero-water-buttons,
+.hero-ground-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 32px;
+  margin-top: 30px;
+  font-family: "Manrope";
+  position: absolute;
+  transition: 0.2s ease-in-out;
+}
+.hero-ground-buttons  {
+  right: 5%;
+  bottom: 3%;
+}
+
+.hero-water-buttons {
+    left: 5%;
+    bottom:3%;
+}
+
+.hero-card-description {
+  color: white;
+  font-family: "Manrope";
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+}
+
+.hero-button-detais {
+  padding: 1em 2em;
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+  font-size: 15px;
+  font-weight: 300 !important;
+  font-family: 'Manrope';
+}
+.hero-button-contact {
+  padding: 1em 2em;
+  color: white;
+  background: #337bef;
+  border: none;
+  transition: all 0.4s ease-in-out;
+  font-size: 15px;
+  font-family: 'Manrope';
+  
+}
+
+
+
+.menu-title {
+  z-index: 10000;
+}
+.menu {
+  z-index: 10000 !;
+}
+
+.hero-ground-description {
+  text-align: right;
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
+
+
+
+.breadcrumbs {
+  color: #050c1a73;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.breadcrumbs a {
+  color: #050c1a73;
+}
+
+.breadcrumbs .active {
+  color: #337bef;
+}
+
+.menu-logo {
+  margin-top: 3em;
+}
+
+.user-level {
+  color: black;
+}
+.badge {
+  position: absolute;
+  font-family: "Manrope";
+  transform: rotate(90deg);
+  top: 4.9em;
+  left: -4.5em;
+  font-size: 7rem;
+  color: rgba(0, 0, 0, 0.044);
+  z-index: 10;
+}
+
+
+.card {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  margin: 4em 0;
+  opacity: 0;
+}
+p:nth-child(2) {
+  transition-delay: 0s !important;
+} 
+
+.water-part-hover {
+  opacity: 0;
+}
+
+
+.water-part-hover:hover ~ .water-part-text .water-part-title {
+  color: white !important;
+}
+.water-part-hover:hover ~ .water-part-text .water-description {
+  opacity: 1 !important;
+}
+.water-part-hover:hover ~ .water-part-text .hero-water-buttons {
+  opacity: 1 !important;
+}
+
+.ground-part-hover:hover ~ .ground-part-text .ground-part-title {
+  color: white !important;
+}
+.ground-part-hover:hover ~ .ground-part-text .hero-ground-buttons {
+  opacity: 1 !important;
+}
+.ground-part-hover:hover ~ .ground-part-text .hero-ground-description{
+  opacity: 1 !important;
+}
+.water-part {
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+  width: 56.8%;
+  
+}
+.ground-part {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  width: 64.2%;
+  pointer-events: none;
+
+}
+.water-part-hover {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  width: 51.9%;
+
+}
+.ground-part-hover {
+  opacity: 0;
+  right: 0;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+  width:60%;
+}
+
+
+.ground-part-hidden {
+  width: 60%;
+}
+
+.hero-description-card-h2,.hero-description-card-p{
+  opacity: 0;
+
+}
+.hero-description-card-h2 {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+.ground-part-text , .water-part-text{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  font-family: 'Roboto';
+  font-size: 3rem;
+  pointer-events: none;
+}
+.water-part-text h2{
+  left: 5%;
+  top:0%;
+  position: absolute; 
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.card h2{
+  transition: all 0.2s ease-in-out;
+}
+
+.ground-part-title{
+  right: 5%;
+  top:0%;
+  position: absolute; 
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.menu-logo{
+  margin-top: 1.5em;
+}
+
+.contacts {
+  height: 90vh !important;
+}
+
+.contact-section {
+  height: 100% !important;
+}
+
+.contact-box {
+  margin-top: 2rem !important;
+}
+.contact-section-mini {
+  height: 100% !important;
+}
+.contacts-conteiner {
+  height: 100% !important;
+}
+
+.blue {
+  color: #337bef;
+}
+
+.contacts-checkbox-container .blue  {
+  text-decoration: underline !important;
+
+}
+
+.additional-activity-pages {
+  justify-content: flex-start;
+}
+
+@media (max-width: 962px){
+  .hero-center-container{
+    width: 100%;
+    overflow: hidden;
+  } 
+  .contacts-conteiner{
+    width: 100% !important;
+    height: 100%;
+  }
+  .top-line-wrapper{
+    display: none;
+  }
+  .left-line-wrapper{
+    display: none;
+  }
+  .right-line-wrapper{
+    display: none;
+  }
+  .middle-line-wrapper{
+    display: none;
+  }
+  .ground-badge{
+    display: none;
+  }
+}

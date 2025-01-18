@@ -1,0 +1,46 @@
+.title {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.title p {
+  opacity: 1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 70%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 0 70%, 0 80%);
+  transition: all 0.5s ease-out;
+}
+
+.title p.in-view {
+  opacity: 1;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  clip-path: polygon(0% -35%, 100% 0%, 100% 110%, 0% 100%);
+  transition: all 0.5s ease-out;
+}
+.in-view {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 720px) {
+  .in-view {
+    justify-content: left;
+  }
+}
+.word {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+p:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+p:nth-child(2) {
+  transition-delay: 0.7s;
+}
+
+p:nth-child(3) {
+  transition-delay: 0.9s;
+}

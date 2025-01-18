@@ -1,0 +1,221 @@
+.map {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.map-conteiner {
+  position: relative;
+  box-sizing: border-box;
+  width: 90rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 2rem;
+}
+.map-text {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  z-index: 5;
+}
+.map-title {
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.156rem;
+  letter-spacing: -0.125rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: #050c1a;
+}
+.map-subtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rectangle-parent {
+  position: absolute;
+  top: 50%;
+  left: 150%; /* Начальное состояние - за пределами экрана */
+  transform: translate(0, -50%);
+  overflow: hidden;
+  width: 300px;
+  height: 6rem;
+  transition: 1s;
+}
+
+.animated-rectangle {
+  width: 300px; /* Изначально полный размер */
+  height: 100%;
+  background-color: #337bef;
+  transition: width 1s ease;
+}
+
+/* Класс для активного состояния */
+.rectangle-parent.active {
+  left: 0; /* Сдвиг в исходное положение при активации */
+}
+
+.animated-rectangle.active {
+  width: 0.3rem; /* Изменение ширины при активации */
+}
+
+.map-subtitle-text {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 2.187rem;
+  font-weight: 700;
+  line-height: 2.563rem;
+  letter-spacing: -0.0625rem;
+  text-align: left;
+  color: #337bef;
+  padding-left: 2rem;
+}
+
+.map-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90rem;
+  height: 50rem;
+  z-index: 4;
+}
+@media (max-width: 768px) {
+  .map {
+    border-top: 2px solid #050c1a26;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 100vw;
+    height: 130vh;
+  }
+  .map-conteiner {
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  .map-text {
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    z-index: 3;
+  }
+  .map-title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 49.5px;
+  }
+  .map-subtitle .rectangle-parent {
+    height: 87px;
+  }
+  .map-subtitle-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.3px;
+  }
+  .map-block {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .map-block::-webkit-scrollbar {
+    display: none;
+  }
+
+  .map-block svg {
+    width: 250vw !important;
+    height: 100vh !important;
+  }
+}
+
+/* Стили для регионов */
+.region {
+  fill: #ccc; /* Цвет по умолчанию */
+  transition: fill 0.3s ease;
+}
+
+/* Эффект при наведении */
+.region:hover {
+  fill: #001538 !important;
+}
+
+.region-name.visible {
+  opacity: 1 !important;
+  pointer-events: none !important;
+}
+
+.region-name {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.35rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0 !important;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.far-eastern {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  z-index: 100;
+}
+.siberian {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  z-index: 100;
+}
+.ural {
+  position: absolute;
+  bottom: 30%;
+  left: 33%;
+  z-index: 100;
+}
+.northwestern {
+  position: absolute;
+  top: 47%;
+  left: 22%;
+  z-index: 100;
+}
+.volga {
+  position: absolute;
+  bottom: 25%;
+  left: 17%;
+  z-index: 100;
+}
+.central {
+  position: absolute;
+  top: 58%;
+  left: 9%;
+  z-index: 100;
+}
+.south {
+  position: absolute;
+  bottom: 19%;
+  left: 8.5%;
+  z-index: 100;
+}
+.north-caucasian {
+  position: absolute;
+  bottom: 7%;
+  left: 6%;
+  z-index: 100;
+}

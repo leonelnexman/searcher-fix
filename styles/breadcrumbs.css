@@ -1,0 +1,27 @@
+.breadcrumbs,
+.breadcrumbs a {
+  position: relative;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+  text-align: left;
+  color: #ffffff50;
+  z-index: 10;
+}
+
+.breadcrumbs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+@media (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
+
+.breadcrumbs .active {
+  color: #ffffff;
+}

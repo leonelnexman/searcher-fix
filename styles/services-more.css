@@ -1,0 +1,1896 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-name {
+  position: absolute;
+  top: -8%;
+  left: -13%;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 9.687rem;
+  font-weight: 700;
+  line-height: 13.233rem;
+  text-align: center;
+  color: #050c1a;
+  opacity: 0.02;
+  transform: rotate(90deg);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.lines-parent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.lines-box {
+  position: relative;
+  width: 90rem;
+  height: 50rem;
+}
+.main {
+  margin-top: 4rem;
+  position: relative;
+  width: 90rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs {
+  padding: 3rem;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  color: #050c1a73 !important;
+}
+
+.breadcrumbs .active {
+  color: #337bef !important;
+}
+
+.main-title-box {
+  box-sizing: border-box;
+  border-bottom: 0.0625rem solid #e0e0e050;
+  margin: 0 3rem;
+  padding-bottom: 1rem;
+}
+.main-title {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 3.437rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #050c1a;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.blue {
+  color: #337bef;
+}
+
+.methodology {
+  position: relative;
+  margin-top: 8rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  justify-content: space-between;
+}
+.methodology-container {
+  box-sizing: border-box;
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  height: fit-content;
+  padding: 0 3.5rem;
+}
+
+.methodology-box-first {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 100%;
+  width: 45%;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 2.812rem;
+  font-weight: 700;
+  line-height: 3.295rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.methodology-box-last {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  gap: 10%;
+  height: 100%;
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+
+.methodology-text {
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 45%;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+.methodology-text ul li {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+.methodology-swiper {
+  position: relative;
+  display: flex;
+  align-items: end;
+  height: fit-content;
+  width: 100%;
+  z-index: 20;
+  margin-left: 25%;
+  padding-top: 100px;
+}
+.methodology-swiper .swiper-container {
+  height: fit-content;
+  width: 100vw;
+  overflow: hidden;
+}
+.methodology-swiper .swiper-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.methodology-swiper .swiper-slide {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 81.25rem;
+  height: 46.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid #00000050;
+  padding: 0.5rem;
+}
+.methodology-swiper .swiper-slide:last-child {
+  border: none;
+}
+
+.methodology-swiper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+}
+.methodology-widgets {
+  position: absolute;
+  top: 5%;
+  left: 56.312rem;
+  width: 10rem;
+  background: #050c1a;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.371rem;
+  text-align: right;
+}
+
+.methodology-widgets .swiper-button-next::after,
+.methodology-widgets .swiper-button-prev::after {
+  display: none !important;
+}
+
+.methodology-pagination {
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+.methodology-swiper-pagination {
+  position: relative;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  width: 20rem;
+}
+.methodology-progress {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  transform: translate(0, -50%);
+}
+
+.methodology-swiper .swiper-pagination {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+  width: 3rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Montserrat";
+  font-size: "1.125rem";
+  font-weight: 400;
+  line-height: 1.371rem;
+  text-align: center;
+  color: #050c1a !important;
+}
+
+.methodology-swiper .swiper-pagination-current {
+  color: #337bef !important;
+}
+.progress-line {
+  position: relative;
+  height: 0.125rem;
+  background-color: #050c1a;
+  width: 19.375rem;
+}
+
+.blue-bar {
+  position: absolute;
+  top: -0.0625rem;
+  left: 0;
+  height: 0.25rem;
+  background-color: #337bef;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+/* our-services */
+.our-services {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+.our-services-container {
+  width: 80rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.our-services-title {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 2.812rem;
+  font-weight: 700;
+  line-height: 3.295rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.our-services-wrap {
+  display: flex;
+  align-items: start;
+  gap: 6rem;
+}
+.our-services-box {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  width: 40%;
+}
+.our-services-box ul li {
+  list-style: disc;
+  margin: 5px 0 5px 30px;
+}
+
+/* shooting */
+.shooting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 6.25rem 0;
+}
+.shooting-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80rem;
+}
+.shooting-title {
+  font-family: "Roboto";
+  font-size: 2.812rem;
+  font-weight: 700;
+  line-height: 3.295rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.shooting-text {
+  display: flex;
+  align-items: start;
+  gap: 10%;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+.shooting-text div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 45%;
+}
+.shooting-text div ul li {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+/* examination */
+.examination {
+  position: relative;
+  margin-top: 7rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.examination-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 90rem;
+  /* height: 50rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 3.5rem;
+}
+.examination-block {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.examination1-image {
+  width: 50%;
+  height: 100%;
+}
+.examination1-image img {
+  width: 100%;
+  height: 100%;
+}
+.examination2-image {
+  width: 50%;
+  height: 100%;
+}
+.examination2-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.examination-box {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 5rem;
+}
+.examination-title {
+  font-family: "Roboto";
+  font-size: 2.812rem;
+  font-weight: 700;
+  line-height: 2.812rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.examination-text {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* examination-video */
+.examination-video {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.examination-video-container {
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5rem;
+}
+.examination-video-text {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  width: 45%;
+}
+.examination-video-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.examination-video-block video {
+  height: 100%;
+  width: 100%;
+}
+.play-video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6.75rem;
+  height: 6.75rem;
+  border-radius: 50%;
+  background: #337bef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-video img {
+  width: 40%;
+  height: 40%;
+}
+
+.play-video.active {
+  display: none;
+}
+
+/* stages */
+.stages {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.stages-container {
+  width: 90rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.stages-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.stages-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.493rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.stages-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 37.56rem;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  padding-right: 1rem;
+}
+.stages-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: fit-content;
+  width: 100%;
+}
+.stages-box {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+}
+.stages-box:last-child {
+  width: 49% !important;
+}
+.stages-card {
+  flex: 1;
+  position: relative;
+  min-height: 26.312rem;
+  height: auto;
+  width: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.stages-card:hover .stages-card-cover {
+  background: #337befd9;
+}
+.stages-card:hover .tages-card-white {
+  display: none;
+}
+.stages-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../assets/images/projects.webp");
+  z-index: 0;
+}
+.tages-card-white {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  opacity: 0.8;
+  z-index: 1;
+}
+.stages-card-cover {
+  position: relative;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  background: #050c1ad9;
+  padding: 2.5rem;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.stages-card-count {
+  font-family: "Roboto";
+  font-size: 3.875rem;
+  font-weight: 500;
+  line-height: 4.65rem;
+  letter-spacing: -0.07em;
+  text-align: left;
+}
+.stages-card-group {
+  width: 100%;
+}
+.stages-card-title {
+  margin-top: 2rem;
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  mix-blend-mode: screen;
+  color: #fff;
+  width: 80%;
+}
+.stages-card-text {
+  width: 32.812rem;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.366rem;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-top: 1rem;
+}
+.stages-card-text ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* why-us */
+.why-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 100px 0;
+}
+.why-us-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80rem;
+}
+.why-us-title {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 2.812rem;
+  font-weight: 700;
+  line-height: 3.295rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.why-us-wrap {
+  display: flex;
+  align-items: start;
+  gap: 10%;
+}
+.why-us-list {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  width: 45%;
+}
+.why-us-list ul {
+  margin-top: 1rem;
+}
+
+.why-us-list ul li {
+  list-style: disc;
+  margin: 5px 0 5px 30px;
+}
+
+/* guarantees */
+.guarantees {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  margin-top: 100px;
+}
+
+.guarantees-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  width: 90rem;
+}
+
+.guarantees-title {
+  text-transform: uppercase;
+  color: #337bef;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.156rem;
+  letter-spacing: -0.0625rem;
+}
+.guarantees-cards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.guarantees-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background: #337bef;
+  height: 320px;
+  width: 100%;
+  padding: 2.5rem;
+}
+.guarantees-img {
+  font-family: "Manrope";
+  font-size: 10.937rem;
+  font-weight: 700;
+  color: transparent; /* Текст становится прозрачным */
+  -webkit-text-stroke: 1px white; /* Белая обводка */
+  opacity: 0.8; /* Регулируем прозрачность */
+}
+.guarantees-text {
+  width: 100%;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* team */
+.team {
+  height: fit-content;
+  padding-bottom: 10em;
+  position: relative;
+  font-family: "Montserrat";
+}
+
+.team-container-cards {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.team-card {
+  min-width: 25%;
+  margin: 20px;
+  z-index: 1;
+}
+
+.team-container {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.team-lines hr {
+  z-index: -10000;
+  border: none;
+  background-color: #e0e0e050;
+}
+
+.team-front-line hr {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 0.0625rem;
+}
+.team-left-line hr {
+  position: absolute;
+  left: 10%;
+  height: 100%;
+  width: 0.0625rem;
+}
+.team-right-line hr {
+  position: absolute;
+  right: 10%;
+  height: 100%;
+  width: 0.0625rem;
+}
+
+.team-bottom-line hr {
+  bottom: 10%;
+  position: absolute;
+  width: 100%;
+  height: 0.0625rem;
+}
+
+.team-container-title h2 {
+  margin: 0;
+  font-size: 60px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+.team-card img {
+  width: 100%;
+  height: 100%;
+}
+.team-card-blue {
+  background: #337bef;
+}
+
+.team-card-worker h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 7px 0;
+}
+
+.team-container-title span {
+  color: #337bef;
+}
+.team-container {
+  padding-top: 10%;
+}
+.team-last-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* map */
+.map {
+  position: relative;
+  height: 110rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url("../assets/images/services/map-cover.180.webp");
+  z-index: 1;
+}
+
+.map-conteiner {
+  position: relative;
+  box-sizing: border-box;
+  width: 90rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 2rem;
+}
+.map-text {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  padding: 2rem;
+  z-index: 5;
+}
+.map-title {
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.156rem;
+  letter-spacing: -0.125rem;
+  text-transform: uppercase;
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.map-subtitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.map-subtitle-text {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+
+  text-align: left;
+  color: #ffffff;
+}
+
+.map-progress {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+}
+.map-progress-box {
+  display: flex;
+  align-items: end;
+  color: #337bef;
+  height: 13.312rem;
+}
+.map-progress-count {
+  font-family: "Montserrat";
+  font-size: 10.937rem;
+  font-weight: 500;
+  line-height: 9.33rem;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+.map-progress-description {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.828rem;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+.map-main-text {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+.map-main-text p {
+  width: 45%;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  color: #ffffff;
+}
+
+.map-picture {
+  height: fit-content;
+  width: 100;
+}
+.map-block {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  margin-top: 45rem;
+}
+
+/* Стили для регионов */
+.region {
+  fill: #5c6085; /* Цвет по умолчанию */
+  transition: fill 0.3s ease;
+  stroke: #5c6085;
+}
+
+/* Эффект при наведении */
+.region:hover {
+  fill: #337bef !important;
+}
+.ural:hover {
+  fill: #337bef !important;
+}
+
+.region-name.visible {
+  opacity: 1 !important;
+  pointer-events: none !important;
+}
+
+.region-name {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.35rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0 !important;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.far-eastern {
+  position: absolute;
+  top: 70%;
+  right: 20%;
+  z-index: 100;
+}
+.siberian {
+  position: absolute;
+  bottom: 12%;
+  left: 48%;
+  z-index: 100;
+}
+.ural {
+  position: absolute;
+  bottom: 20%;
+  left: 33%;
+  z-index: 100;
+}
+.northwestern {
+  position: absolute;
+  top: 70%;
+  left: 22%;
+  z-index: 100;
+}
+.volga {
+  position: absolute;
+  bottom: 16%;
+  left: 17%;
+  z-index: 100;
+}
+.central {
+  position: absolute;
+  top: 76%;
+  left: 9%;
+  z-index: 100;
+}
+.south {
+  position: absolute;
+  bottom: 13%;
+  left: 8.5%;
+  z-index: 100;
+}
+.north-caucasian {
+  position: absolute;
+  bottom: 7%;
+  left: 6%;
+  z-index: 100;
+}
+
+/* letter */
+.letter-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.letter-conteiner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90rem;
+  height: 50rem;
+}
+
+.letter-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.156rem;
+  letter-spacing: -0.125rem;
+  text-align: left;
+  color: #050c1a;
+}
+
+.letter-block {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  z-index: 10;
+  background: #ffffff;
+  width: 100%;
+  height: 50rem;
+}
+.letter-subtitle {
+  box-sizing: border-box;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 50rem;
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.048rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding: 0 2rem;
+}
+.letter-block ul {
+  height: 80%;
+}
+.letter-block ul li {
+  width: 100%;
+  height: 12.5%;
+}
+.letter-inline-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.letter-image-box {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 40rem;
+  width: 40rem;
+}
+.letter-display {
+  transform: translateY(0%) !important;
+}
+.letter-img {
+  height: 40rem;
+  width: 40rem;
+}
+
+.letter-img img {
+  width: 100%;
+  height: 100%;
+}
+.letter-content-box {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: start;
+  width: 50rem;
+  height: 100%;
+  border: 0.0625rem solid #00000020;
+  padding: 0.5rem 2rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.letter-content-box:hover {
+  color: #ffffff;
+  background: #337bef !important;
+}
+
+li.active .letter-content-box {
+  background: #337bef !important;
+  color: #ffffff;
+}
+
+.letter-content-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* Ограничивает до одной строки */
+  overflow: hidden; /* Скрывает лишний текст */
+  text-overflow: ellipsis; /* Добавляет многоточие */
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.536rem;
+  text-align: left;
+}
+
+.letter-more {
+  position: relative;
+  width: 90rem;
+  min-height: 3.062rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid #00000020;
+  background: #ffffff;
+  z-index: 10;
+}
+
+.letter-content {
+  display: flex;
+  align-items: center;
+}
+
+/* objects */
+.objects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 7rem;
+}
+.container-name-objects {
+  position: absolute;
+  top: 40%;
+  left: -15.5%;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 9.687rem;
+  font-weight: 700;
+  line-height: 13.233rem;
+  text-align: center;
+  color: #050c1a;
+  opacity: 0.02;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+.objects-conteiner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: fit-content;
+  width: 90rem;
+  z-index: 10;
+  background: #ffffff;
+}
+
+.objects-title {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.493rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  padding: 2rem;
+}
+
+.objects-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.objects-content {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.832rem;
+  width: 100%;
+  background: #f5f5f5;
+  color: #050c1a;
+  padding: 0 2rem;
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+  cursor: pointer;
+}
+.objects-content.active {
+  background: #337bef;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+.objects-content-title {
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.048rem;
+  text-align: left;
+}
+
+.objects-block {
+  position: relative;
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 0 1.5rem;
+  transition: 0.5s ease-in-out;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.objects-block.active {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: fit-content;
+  max-height: fit-content;
+  padding: 0 1.5rem;
+  gap: 0.5rem;
+  width: 100%;
+  color: #050c1a;
+  margin: 0.5rem 0;
+  padding-bottom: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.objects-main {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin-top: 1rem;
+  gap: 2.5rem;
+  width: 100%;
+  height: fit-content;
+}
+.objects-main-img {
+  width: 33.812rem;
+  height: 21rem;
+}
+
+.objects-main-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.objects-main-text {
+  display: flex;
+  flex-direction: column;
+  width: 43.25rem;
+  gap: 1rem;
+}
+
+.objects-main-title {
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.048rem;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.objects-main-subtitle {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+
+.objects-main-subtitle li {
+  list-style: disc;
+  margin-left: 30px;
+  line-height: 1.736rem;
+}
+
+.objects-additional {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.objects-additional-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+.objects-additional hr {
+  background: none;
+  width: 0;
+  height: 3.125rem;
+  color: #050c1a;
+  transform: scaleY(0);
+  transform-origin: top; /* Исходная точка снизу */
+  transition: transform 1s;
+}
+.objects-more {
+  width: 16.4rem;
+  height: 4.546rem;
+  border: 0.0625rem solid #050c1a;
+  margin-top: -2%;
+}
+.objects-more:hover {
+  border: none;
+}
+
+.objects-more button {
+  height: 100%;
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.366rem;
+  text-align: center;
+  background: none;
+  border: none;
+}
+
+.active .objects-additional hr {
+  transform: scaleY(1); /* Линия растет по вертикали */
+}
+
+.objects-additional-subtitle {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+}
+
+/* projects */
+.swiper {
+  position: relative;
+  height: 50rem;
+  z-index: 10 !important;
+}
+.projects .swiper-container {
+  height: 100%;
+  width: 100%;
+}
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.projects .swiper-slide {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.5s ease; /* Плавный переход */
+}
+
+.projects {
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-top: 100px;
+}
+.container-name-projects {
+  position: absolute;
+  top: 40%;
+  left: -15.5%;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 9.687rem;
+  font-weight: 700;
+  line-height: 13.233rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.02;
+  transform: rotate(90deg);
+  z-index: 10;
+}
+
+.projects-cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../assets/images/projects.webp");
+  z-index: -1;
+}
+.projects-cover-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.projects-cover-white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #050c1ad9;
+  z-index: 1;
+}
+
+.projects-content {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 6vh;
+  width: 90rem;
+  height: 94vh;
+  /* overflow: hidden; */
+  border: 0.0625rem solid #e0e0e020;
+  z-index: 3;
+}
+
+.interactive {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%);
+  height: 9.937rem;
+  width: 9.937rem;
+  border-radius: 50%;
+  border-right: 0.125rem dashed #337bef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.interactive p {
+  font-family: "Manrope";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.195rem;
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+.interactive img {
+  width: 0.703rem;
+  height: 1.406rem;
+}
+
+@media (max-width: 768px) {
+  .projects-content {
+    height: 100%;
+    width: 100%;
+  }
+  .swiper-pagination {
+    display: none !important;
+  }
+}
+
+.projects-slide {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-title {
+  position: relative;
+  font-family: "Roboto";
+  font-size: 7.812rem;
+  font-weight: 700;
+  line-height: 5.859rem;
+  letter-spacing: -0.625rem;
+  text-align: left;
+  padding: 2rem 3rem;
+  color: white;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.projects-title-firts-stroke {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 1rem;
+}
+.blue {
+  color: #337bef;
+}
+@media (max-width: 768px) {
+  .projects-title {
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 46.75px;
+    letter-spacing: -0.5px;
+  }
+
+  .projects-title-firts-stroke {
+    display: block;
+  }
+}
+
+.projects-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50.06rem;
+  height: 28.56rem;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.projects-image {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .projects-img {
+    top: 60%;
+    width: 380px !important;
+    height: 414px !important;
+  }
+  .projects-img img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(0%, 0%) !important;
+}
+
+.projects-widgets {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  height: 10%;
+  width: 100%;
+  z-index: 10;
+}
+.prroject-more-parent {
+  width: 100%;
+  height: fit-content;
+  border-top: 0.0625rem solid #e0e0e020;
+}
+.projects-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 0.0625rem solid #e0e0e020;
+  height: 10%;
+  width: 100%;
+}
+.projects-more a {
+  width: 100%;
+  height: 100%;
+}
+.projects-more button {
+  border: none;
+  background: none;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: center;
+  color: #ffffff;
+  width: 21.875rem;
+  height: 100%;
+  border-right: 0.0625rem solid #e0e0e020;
+  cursor: pointer;
+}
+.projects-more button:hover {
+  background: #337bef;
+}
+.projects-button-prev,
+.projects-button-next {
+  display: block !important;
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.32px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.projects-swiper-pagination {
+  width: fit-content !important;
+  color: #ffffff !important;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: center;
+  margin-left: 1%;
+}
+.swiper-pagination-current {
+  font-weight: 600;
+}
+
+.projects-pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  font-family: "Manrope" !important;
+  z-index: 11;
+}
+@media (max-width: 768px) {
+  .projects-widgets {
+    border: none;
+    padding: 0 20px;
+    bottom: 40px;
+  }
+  .projects-more {
+    left: 20px;
+    bottom: 60px;
+    width: 188px;
+    height: 48px;
+    border: 0.0625rem solid #ffffff;
+  }
+  .projects-more button {
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: center;
+  }
+}
+
+/* other */
+.other {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100vh;
+}
+.other-container {
+  width: 90rem;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+}
+.other-text {
+  box-sizing: border-box;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.other-title {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 4.687rem;
+  font-weight: 700;
+  line-height: 5.493rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.other-desxription {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  width: 30.75rem;
+}
+.other-block {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  z-index: 10;
+}
+.other-box {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  background: #337bef;
+  color: #ffffff;
+}
+.other-box-text {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+.other-box-title {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 2.062rem;
+  font-weight: 700;
+  line-height: 2.268rem;
+  letter-spacing: -0.0625rem;
+  text-align: left;
+  width: 130%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.other-box-decsription {
+  font-family: "Manrope";
+  font-size: 0.675rem;
+  font-weight: 400;
+  line-height: 0.921rem;
+  text-align: left;
+  width: 19rem;
+}
+.other-box-link {
+  font-family: "Manrope";
+  font-size: 0.675rem;
+  font-weight: 400;
+  line-height: 0.921rem;
+  text-align: left;
+  width: 5.225rem;
+  height: 1.875rem;
+  border-left: 0.0625rem solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.4rem;
+}
+.other-box-image {
+  width: 50%;
+  height: 100%;
+}
+
+.other-box-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.other-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050c1a40;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.other-box:hover .other-link {
+  opacity: 1;
+}
+
+.other-link-box {
+  width: 18.312rem;
+  height: 4.687rem;
+  border: 0.0625rem solid #ffffff;
+}
+
+.other-link-box a {
+  height: 100%;
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.048rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

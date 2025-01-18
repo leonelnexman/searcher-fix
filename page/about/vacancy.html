@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/title.css" />
+    <link rel="stylesheet" href="../../styles/about-page.css" />
+    <link rel="stylesheet" href="../../styles/team-page.css" />
+    <link rel="stylesheet" href="../../styles/breadcrumbs.css" />
+    <link rel="stylesheet" href="../../styles/menu.css" />
+    <link rel="stylesheet" href="../../styles/vacancy-page.css" />
+    <link rel="stylesheet" href="../../styles/map.css" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <!-- CSS для Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"
+    />
+
+    <!-- JS для Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" defer  ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader">
+        <div class="progress-text">0%</div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="mobile-header">
+        <div class="mobile-header-container">
+          <div class="mobile-header-logo">
+            <a href="/">
+              <img src="../../assets/icons/logo-mobile-white.svg" alt="logo">
+            </a>
+            <hr>
+          </div>
+            <div class="mobile-header-title">
+              <div class="mobile-title ">
+                <h1>Стать частью нашей команды, очень легко</h1>
+              </div>
+            </div>
+            <div class="mobile-header-buttons">
+              <button class="mobile-header-send">Отправить резюме</button>
+              <div class="mobile-header-scroll">
+                <p class="mobile-header-scroll-decription">Свайпните вниз или нажмите на кнопку справа</p>
+                <button class="mobile-header-scroll-button">
+                  <img src="../../assets/icons/right-vector.svg" alt="arrow">
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div
+        class="menu-logo"
+        data-aos="fade"
+        data-aos-duration="1000"
+        data-aos-delay="2000"
+        data-aos-easing="ease-in-out"
+      >
+        <img
+          src="../../assets/icons/border-logo-white.svg"
+          alt=""
+          class="menu-logo-img"
+        />
+      </div>
+      <div class="header panel header-team">
+        <div class="main">
+          <div class="for-lines">
+            <div class="animation-lines" id="animatedLines">
+              <div class="top-line">
+                <hr />
+              </div>
+              <div class="bottom-line">
+                <hr />
+              </div>
+              <div class="horizontal-line">
+                <hr />
+              </div>
+              <div class="left-line">
+                <hr />
+              </div>
+              <div class="right-line">
+                <hr />
+              </div>
+              <div class="vertical-line">
+                <hr />
+              </div>
+            </div>
+          </div>
+          <div class="breadcrumbs">
+            <div id="breadcrumbs"></div>
+          </div>
+          <div class="vacancy-hero-center">
+            <div class="main-title title">
+              <p>Стать частью нашей</p>
+              <p>команды, очень легко</p>
+            </div>
+            <div class="vacancy-hero-button-container">
+              <a href="#button" class="vacancy-hero-button">
+                Отправить резюме
+              </a>
+            </div>
+          </div>
+
+          <div class="main-subtitle">
+            <div class="main-subtitle-box">
+              <div class="rectangle-parent-white">
+                <div class="animated-rectangle-white"></div>
+              </div>
+              <div
+                class="main-subtitle-text"
+                data-aos="fade"
+                data-aos-duration="500"
+                data-aos-delay="3000"
+                data-aos-offset="-200"
+              >
+                <p>
+                  АО «Искатель» было создано в 1993 году офицерами запаса ВС и МЧС России.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vacancy panel">
+        <div class="badge vacancy-badge">
+          <h2>Вакансии</h2>
+        </div>
+
+       
+
+        <div class="vacancy-lines">
+        
+          <div class="vacancy-front-line"><hr /></div>
+          <div class="vacancy-left-line"><hr /></div>
+          <div class="vacancy-right-line"><hr /></div>
+          <div class="vacancy-middle-line"><hr /></div>
+          <div class="vacancy-bottom-line"><hr /></div>
+          <div class="logo-container">
+            <img src="../../assets/icons/border-logo-dark.svg" alt="логотип" />
+          </div>
+        </div>
+
+        <div class="vacancy-container">
+          <div class="vacancy-center">
+            <div class="mobile-project-pointer">
+              <div class="mobile-project-logo">
+                  <p>Проекты</p>
+                  <a href="/">
+                    <img src="../../assets/icons/Logo-blue.svg" alt="">
+                  </a>
+                </div>
+               <hr>
+              </div> 
+            <div class="vacancy-text">
+              <h2 class="vacancy-title">
+                <span class="vacancy-text-blue">АО «Искатель»</span>
+                создано<br />
+                в 1993 году офицерами<br />
+                запаса в тесном
+              </h2>
+              <p class="vacancy-description">
+                АО «Искатель» - это слаженная команда профессионалов с высоким
+                уровнем подготовки, широким опытом и квалификацией. Каждый из
+                наших сотрудников прошел строгую профессиональную подготовку в
+                области инженерной разведки, обезвреживания взрывоопасных
+                предметов (ВОП) и проведения подводных работ. Мы гордимся
+                многолетним опытом работы в самых сложных условиях. Наша цель —
+                очистить каждый участок от потенциальной угрозы и сделать его
+                безопасным для последующего использования.
+              </p>
+            </div>
+
+            <div class="vacancy-images">
+              <img
+                class="vacancies-img-first"
+                src="../../assets/images/women-first-elipse.webp"
+                alt=""
+              />
+              <img
+                class="vacancies-img-second"
+                src="../../assets/images/man-fourth-elipse.webp"
+                alt=""
+              />
+              <div class="vacancy-second-img-row">
+                <img
+                  class="vacancies-img-third"
+                  src="../../assets/images/women-second-elipse.webp"
+                  alt=""
+                />
+                <img
+                  class="vacancies-img-fourth"
+                  src="../../assets/images/man-third-elipse.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="vacancy-mobile-images">
+              <div class="vacancy-img-first-row">
+                <img
+                class="vacancies-img-first"
+                src="../../assets/images/women-first-elipse.webp"
+                alt=""
+              />
+              <img
+                class="vacancies-img-second"
+                src="../../assets/images/man-fourth-elipse.webp"
+                alt=""
+              />
+              </div>
+              <div class="vacancy-second-img-row">
+                <img
+                  class="vacancies-img-third"
+                  src="../../assets/images/women-second-elipse.webp"
+                  alt=""
+                />
+                <img
+                  class="vacancies-img-fourth"
+                  src="../../assets/images/man-third-elipse.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mobile-vacancy-description-container">
+              <p class="mobile-vacancy-description">
+                АО «Искатель» - это слаженная команда профессионалов с высоким
+                уровнем подготовки, широким опытом и квалификацией. Каждый из
+                наших сотрудников прошел строгую профессиональную подготовку в
+                области инженерной разведки, обезвреживания взрывоопасных
+                предметов (ВОП) и проведения подводных работ. Мы гордимся
+                многолетним опытом работы в самых сложных условиях. Наша цель —
+                очистить каждый участок от потенциальной угрозы и сделать его
+                безопасным для последующего использования.
+              </p>
+            </div>
+            <div class="vacancies">
+              <div class="vacancies-title-container">
+                <h2 class="title"><p>вакансии</p></h2>
+              </div>
+
+              <div class="vacancies-cards">
+                <div class="vacancy-card vacancy-first">
+                  <h3>Сапер гуманитарного разминирования</h3>
+                  <button class="vacancy-card-button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.54545 1.5L15 8.25M15 8.25L9.54545 15M15 8.25H0" stroke="white" stroke-width="2.25"/>
+                      </svg>
+                      
+                  </button>
+                </div>
+                <div class="vacancy-card vacancy-second">
+                  <h3>Водолаз</h3>
+                  <button class="vacancy-card-button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.54545 1.5L15 8.25M15 8.25L9.54545 15M15 8.25H0" stroke="white" stroke-width="2.25"/>
+                      </svg>
+                      
+                  </button>
+                </div>
+                <div class="vacancy-card vacancy-third">
+                  <h3>Сапёр, Оператор металлоискателя</h3>
+                  <button class="vacancy-card-button">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.54545 1.5L15 8.25M15 8.25L9.54545 15M15 8.25H0" stroke="white" stroke-width="2.25"/>
+                      </svg>
+                      
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vacancies-mobile">
+        <div class="vacancies">
+          <div class="vacancies-title-container">
+            <div class="title-container">
+  
+            </div>
+            <h2 class="title"><p>вакансии</p></h2>
+          </div>
+  
+          <div class="vacancies-cards">
+            <div class="vacancy-card vacancy-first">
+              <h3>Сапер гуманитарного разминирования</h3>
+              <button class="vacancy-card-button">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.54545 1.5L15 8.25M15 8.25L9.54545 15M15 8.25H0" stroke="white" stroke-width="2.25"/>
+                  </svg>
+                  
+              </button>
+            </div>
+            <div class="vacancy-card vacancy-second">
+              <h3>Водолаз</h3>
+              <button class="vacancy-card-button">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.54545 1.5L15 8.25M15 8.25L9.54545 15M15 8.25H0" stroke="white" stroke-width="2.25"/>
+                  </svg>
+                  
+              </button>
+            </div>
+            <div class="vacancy-card vacancy-third">
+              <h3>Сапёр, Оператор металлоискателя</h3>
+              <button class="vacancy-card-button">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.54545 1.5L15 8.25M15 8.25L9.54545 15M15 8.25H0" stroke="white" stroke-width="2.25"/>
+                  </svg>
+                  
+              </button>
+            </div>
+            <div class="vacancy-card vacancy-fourth">
+              <h3>Сапер гуманитарного разминирования</h3>
+              <button class="vacancy-card-button">
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.54545 1.5L15 8.25M15 8.25L9.54545 15M15 8.25H0" stroke="white" stroke-width="2.25"/>
+                  </svg>
+                  
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="form-container panel">
+        <div class="form-img-container">
+          <img
+            class="form-img"
+            src="../../assets/images/handshake.webp"
+            alt="Станьте частью команды"
+          />
+          <img src="../../assets/images/mobile-form-container.webp" alt="мобильная адаптация " class="form-img-mobile">
+        </div>
+        <div class="form-wrapper">
+          <div class="form-text">
+            <div class="form-title">
+              <div class="title">
+                <p>станьте</p>
+                <p>частью нашей</p>
+                <p>команды !</p>
+              </div>
+            </div>
+            <p class="form-description">
+              Если вы хотите стать частью команды АО "Искатель",<br />
+              заполните форму заявки
+            </p>
+          </div>
+          <form class="form-team">
+            <div class="form-inputs form-team-inputs">
+              <label for="name">
+                <input
+                  requiredç
+                  class="form-team-name"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя*"
+                />
+              </label>
+              <label for="phone">
+                <input
+                  required
+                  type="text"
+                  class="form-team-phone"
+                  name="phone"
+                  placeholder="Ваш телефон*"
+                />
+              </label>
+            </div>
+            <div class="form-team-buttons">
+              <button class="form-team-submit">Отправить</button>
+              <div class="form-team-checkbox-container">
+                <label class="custom-checkbox">
+                  
+                  <input type="checkbox"  required class="form-checkbox" />
+                  <span class="custom-checkbox-box"></span>
+                </label>
+                  <p class="privacy">
+                    Я ознакомился с  <a class="privacy-link" href="./policy.html">
+                      Политикой в отношении обработки
+                    <br />персональных данных и соглашаюсь на обработку моих
+                    </a>
+                    <br />персональных данных в соответствии с условиями
+                  </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+       <!-- contacts -->
+    <!-- contacts -->
+    <div class="contacts panel last-section">
+      <div id="success-modal">
+        <div class="contacts-modal-content">
+          <div class="contacts-modal-title">
+            <p><span class="blue">Спасибо</span> за заявку</p>
+          </div>
+          <div class="contacts-modal-subtitle mobil-none">Мы с вами свяжемся в ближайшее время</div>
+          <div class="contacts-modal-subtitle web-none">
+            Мы перезвоним вам в течение 30 минут, а пока что можно посмотреть новые статьи о работе компании в нашем
+            блоге:
+          </div>
+          <button onclick="closeModal()" class="mobil-none">Закрыть</button>
+          <button onclick="closeModal()" class="web-none">Перейти в блог</button>
+        </div>
+      </div>
+      <div id="modal-overlay"></div>
+      <div class="menu-logo" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out"></div>
+      <div class="contact-section"></div>
+      <div class="contact-section-mini"></div>
+
+      <div class="mobile-name">
+        <p>Контакты</p>
+        <img src="../../assets/icons/Logo.svg" alt="logo" />
+      </div>
+      <div class="contacts-conteiner">
+        <div class="for-lines">
+          <div class="animation-lines" id="animatedLines">
+            <div class="top-line">
+              <hr />
+            </div>
+            <div class="bottom-line">
+              <hr />
+            </div>
+            <div class="horizontal-line">
+              <hr />
+            </div>
+            <div class="left-line">
+              <hr />
+            </div>
+            <div class="right-line">
+              <hr />
+            </div>
+            <div class="vertical-line">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <div class="contacts-title">
+            <div class="title">
+              <p>Вы всегда</p>
+            </div>
+            <div class="parted-title title">
+              <p>можете</p>
+              <p class="blue">связаться</p>
+            </div>
+            <div class="title">
+              <p class="blue">с нами!</p>
+            </div>
+          </div>
+          <div class="inline-item">
+            <div class="contacts-menu" data-aos="fade" data-aos-duration="500">
+              <div class="contacts-menu-title">Меню</div>
+              <div class="contacts-menu-block">
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Проекты</a></li>
+                    <li><a href="">Оборудование</a></li>
+                  </ul>
+                </div>
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-info" data-aos="fade" data-aos-duration="500">
+              <div class="contacts-info-title">Контакты</div>
+              <div class="contacts-info-box">
+                <ul>
+                  <li>
+                    <p>195220, г. Санкт-Петербург, пр. Науки, д. 17, к. 2, помещение 52Н.</p>
+                  </li>
+                  <li><a href="tel:+78124974182">+7 (812) 497-41-82</a></li>
+                  <li>
+                    <div class="inline-item">
+                      <p>+7 (812) 497-41-83</p>
+                      <p class="blue">*Факс</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-mobile">
+            <div class="mobile-widgets">
+              <div class="mobile-conacts-box">
+                <div class="rectangle-parent-white">
+                  <div class="animated-rectangle-white"></div>
+                </div>
+                <div
+                  class="mobile-conacts-text"
+                  data-aos="fade"
+                  data-aos-duration="500"
+                  data-aos-delay="2000"
+                  data-aos-offset="-200"
+                >
+                  <p>Достаточно просто заполнить форму</p>
+                </div>
+              </div>
+              <button
+                class="contact-us-mobile"
+                data-aos="fade"
+                data-aos-duration="500"
+                data-aos-delay="2000"
+                data-aos-offset="-200"
+              >
+                Связаться
+              </button>
+            </div>
+            <div class="contacts-menu-mobile" data-aos="fade" data-aos-duration="500" data-aos-offset="-200">
+              <div class="contacts-menu-title">Меню</div>
+              <div class="contacts-menu-block">
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Проекты</a></li>
+                    <li><a href="">Оборудование</a></li>
+                  </ul>
+                </div>
+                <div class="contacts-menu-box">
+                  <ul>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-info-mobile" data-aos="fade" data-aos-duration="500" data-aos-offset="-200">
+              <div class="contacts-info-title">Контакты</div>
+              <div class="contacts-info-box">
+                <ul>
+                  <li>
+                    <p>195220, г. Санкт-Петербург, пр. Науки, д. 17, к. 2, помещение 52Н.</p>
+                  </li>
+                  <li><a href="tel:+78124974182">+7 (812) 497-41-82</a></li>
+                  <li>
+                    <div class="inline-item">
+                      <p>+7 (812) 497-41-83</p>
+                      <p class="blue">*Факс</p>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="mailto:mail@zao-iskatel.ru">mail@zao-iskatel.ru</a>
+                  </li>
+                  <li>
+                    <a href="">Политика обработки персональных данных</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box contact-box-form">
+          <div class="contacts-form hidden" id="mobile-contact-form">
+            <img src="./assets/icons/close-blue.svg" alt="close-icon" class="close-blue" />
+            <form id="contacts-form">
+              <div class="form-inputs">
+                <input type="text" id="name" placeholder="Ваше имя*" required />
+                <input type="text" id="phone" placeholder="Телефон" required />
+              </div>
+              <textarea name="comment" id="comment" placeholder="Комментарий"></textarea>
+              <div class="contacts-checkbox-container">
+                <input type="checkbox" id="checkbox-1" name="checkbox-1" style="width: 1.5rem" required />
+                <label for="checkbox-1" class="checkbox-1 mobil-none">
+                  <p>
+                    Я ознакомился с
+                    <a href="" class="blue"> Политикой в отношении обработки персональных данных </a>
+                    и соглашаюсь на обработку моих персональных данных в соответствии с 
+                    <a href="" class="blue"> условиями</a>
+                  </p>
+                </label>
+                <label for="checkbox-1" class="checkbox-1 web-none">
+                  <p>
+                    Я ознакомился с 
+                    <a href="">Политикой в отношении обработки</a>
+                  </p>
+                  <p>
+                    <a href="">персональных данных </a>
+                    и соглашаюсь на обработку моих
+                  </p>
+                  <p>
+                    персональных данных в соответствии с
+                    <a href=""> условиями</a>
+                  </p>
+                </label>
+              </div>
+              <div class="contacts-send">
+                <button type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        class="contacts-footer"
+        data-aos="fade"
+        data-aos-duration="500"
+        data-aos-delay="2000"
+        data-aos-offset="-1000"
+      >
+        <div class="contacts-footer-box">
+          <p>© 2011 АО ИСКАТЕЛЬ</p>
+          <a href="" class="mobil-none">Политика обработки персональных данных</a>
+        </div>
+        <div class="contacts-footer-box">
+          <a href="">Разработка сайта</a>
+        </div>
+      </div>
+    </div>
+  
+
+    <div
+      class="menu"
+      data-aos="fade"
+      data-aos-duration="500"
+      data-aos-delay="2000"
+    >
+      <button class="menu-items">
+        <p class="menu-title">Меню</p>
+        <div class="menu-image">
+          <img
+            class="menu-img"
+            src="../../assets/icons/menu-white.svg"
+            alt=""
+          />
+        </div>
+      </button>
+    </div>
+    <div class="opened-menu">
+      <div class="opened-menu-content">
+        <div class="opened-menu-subblock">
+          <div class="opened-menu-widget">
+            <div class="opened-menu-btn">
+              <button>
+                <p>Закрыть</p>
+                <img src="../../assets/icons/close.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="opened-menu-contacts">
+            <div class="opened-menu-contacts-box">
+              <div class="opened-menu-contacts-title"><p>Почта</p></div>
+              <div class="opened-menu-contacts-text">
+                <p>mail@zao-iskatel.ru</p>
+              </div>
+            </div>
+            <div class="opened-menu-contacts-box">
+              <div class="opened-menu-contacts-title"><p>Телефон</p></div>
+              <div class="opened-menu-contacts-text">
+                <p>8 (812) 497-41-82</p>
+              </div>
+            </div>
+            <div class="opened-menu-contacts-box">
+              <div class="opened-menu-contacts-title"><p>Факс</p></div>
+              <div class="opened-menu-contacts-text">
+                <p>8 (812) 497-41-83</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="opened-menu-block">
+          <div class="opened-menu-links">
+            <ul>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Проекты</a></li>
+              <li><a href="">Оборудование</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Медиа</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="opened-menu-sublinks">
+            <div class="opened-menu-sublinks-box">
+              <ul>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Виды деятельности</a></li>
+                <li><a href="#">Регионы</a></li>
+                <li><a href="#">Политика</a></li>
+              </ul>
+            </div>
+            <div class="opened-menu-sublinks-box">
+              <ul>
+                <li><a href="#">Специалисты</a></li>
+                <li><a href="#">Как мы работаем</a></li>
+                <li><a href="#">Партнерам</a></li>
+                <li><a href="#">Вопросы и ответы </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="opened-menu-video">
+        <video muted loop class="opened-menu-back">
+          <source src="../../assets/video/2.mp4" type="video/mp4" />
+          Ваш браузер не поддерживает видео.
+        </video>
+        <div class="icon-wrapper">
+          <img
+            class="big-logo"
+            src="../../assets/icons/big-white-logo.svg"
+            alt="Menu Icon"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="user-level"
+      data-aos="fade"
+      data-aos-duration="500"
+      data-aos-delay="2000"
+    >
+      <div class="header-level">
+        <p>Вакансии</p>
+        <hr />
+      </div>
+      <div class="services-level">
+        <p>Заявка</p>
+        <hr />
+      </div>
+      <div class="about-level">
+        <p>Футер</p>
+        <hr />
+      </div>
+    </div>
+
+    <div class="vacancy-modal " data-lenis-prevent="true">
+      <div class="vacancy-modal-content">
+        <div class="vacnacy-modal-grid">
+          <div class="mobile-project-pointer">
+            <div class="mobile-project-logo">
+                <p>Проекты</p>
+                <img src="../../assets/icons/Logo-blue.svg" alt="">
+              </div>
+             <hr>
+            </div>
+          <div class="modal-name vacancy-first-name">
+            <button class="vacancy-modal-exit-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="23"
+                viewBox="0 0 24 23"
+                fill="none"
+              >
+                <line
+                  x1="1.40633"
+                  y1="1.04875"
+                  x2="22.6195"
+                  y2="22.262"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <line
+                  x1="22.6173"
+                  y1="1.0489"
+                  x2="1.40406"
+                  y2="22.2621"
+                  stroke="white"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-desc vacancy-about-wrapper">
+            <h3 class="modal-vacancy-main-title">
+              <span>Сапёр,</span> Оператор металлоискателя
+            </h3>
+            <p class="modal-vacancy-main-description">
+              Гумaнитарноe paзминиpoвание - деятeльность, выпoлняемaя вне рaйoнoв боeвых действий во взaимoдeйствии с opганами мecтногo сaмоупрaвлeния (тepриториaльнoй администрaциeй), которая пpиводит к устpaнению опaсноcтей (рисков), связанных с ВОП, включающая проведение сплошного обследования местности и объектов на предмет наличия ВОП, составление карт, поиск и обезвреживание ВОП, подготовку документации после проведения разминирования, в том числе на передачу разминированных территорий.
+
+            </p>
+          </div>
+  
+          <div class="modal-name">
+            <p class="modal-name-vacancy">О вакансии</p>
+          </div>
+          <div class="modal-desc">
+            <div class="modal-about-criterion">
+              <div class="modal-about-criterion-part">
+                <p class="modal-about-criterion-title">Требования:</p>
+                <ul class="modal-about-criterion-list">
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>
+                      Прохождение службы в ВС РФ, предпочтительно ВУС Сапёр.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Наличие опыта работы по гуманитарному разминированию..</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Работник должен знать правила и меры безопасности при проведении работ.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Приветствуется знание работы с ПК, умение работы с навигационными приборами GPS</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Отсутствие противопоказаний по здоровью.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Водительские права В,С.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Отсутствие судимости и нарко-алкогольной зависимости (справка обязательна).</p>
+                  </li>
+                </ul>
+                <div class="modal-criterion-part-line">
+                  <hr class="modal-criterion-part-line-hr" />
+                </div>
+              </div>
+  
+              <div class="modal-about-criterion-part">
+                <p class="modal-about-criterion-title">Условия:</p>
+                <ul class="modal-about-criterion-list">
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Прохождение службы в ВС РФ, предпочтительно ВУС Сапёр.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Наличие опыта работы по гуманитарному разминированию.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Работник должен знать правила и меры безопасности при проведении работ.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Приветствуется знание работы с ПК, умение работы с навигационными приборами GPS.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Отсутствие противопоказаний по здоровью.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Водительские права В,С.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Отсутствие судимости и нарко-алкогольной зависимости (справка обязательна).</p>
+                  </li>
+                </ul>
+                <div class="modal-criterion-part-line">
+                  <hr class="modal-criterion-part-line-hr" />
+                </div>
+              </div>
+  
+              <div class="modal-about-criterion-part">
+                <p class="modal-about-criterion-title">Обязанности:</p>
+                <ul class="modal-about-criterion-list">
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Работа по гуманитарному разминированию.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Очистка местности от взрывоопасных предметов.</p>
+                  </li>
+                  <li>
+                    <div class="modal-about-li-circle"></div>
+                    <p>Работа с металлоискателями - поисковыми приборами.</p>
+                  </li>
+                </ul>
+                <div class="modal-criterion-part-line">
+                  <hr class="modal-criterion-part-line-hr" />
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="modal-name">
+            <p>Контактная информация</p>
+          </div>
+          <div class="modal-desc modal-inputs">
+            <input required type="text" placeholder="Телефон*" />
+            <input required type="text" placeholder="ФИО*" />
+            <input  required type="text" placeholder="E-mail*" />
+          </div>
+          <div class="modal-name">
+            <p>Ваша специальность</p>
+          </div>
+  
+          <div class="modal-desc vacancy-modal-last-section">
+            <div class="vacancy-last-inputs modal-inputs">
+              <input type="text" required placeholder="Специальность*" />
+              <input type="text" required placeholder="Образование*" />
+              <input type="text" required placeholder="Опыт работы*" />
+              <input type="text" required placeholder="Комментарий" />
+            </div>
+            <div class="vacancy-modal-submit">
+              <label class="input-file">
+                <input type="file" required name="file" />
+                <span class="input-file-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 5V13C5 14.1046 5.89543 15 7 15V15C8.10457 15 9 14.1046 9 13V5C9 2.79086 7.20914 1 5 1V1C2.79086 1 1 2.79086 1 5V13C1 16.3137 3.68629 19 7 19V19C10.3137 19 13 16.3137 13 13V8"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </span>
+                <span class="input-file-text">Прикрепите резюме</span>
+              </label>
+              <div class="vacancy-modal-button-wrapper">
+                <button class="form-team-submit modal-submit-button">
+                  Отправить
+                </button>
+                <div class="form-team-checkbox-container">
+                  <label class="custom-checkbox custom-checkbox-modal">
+                    <input type="checkbox" required class="form-checkbox" />
+                    <span class="custom-checkbox-box custom-checkbox-box-modal"></span>
+                  </label>
+                    <p class="privacy privacy-modal">
+                      Я ознакомился с  <a class="privacy-link privacy-link-modal" href="./policy.html">
+                        Политикой в отношении обработки
+                      <br />персональных данных и соглашаюсь на обработку моих
+                      </a>
+                      <br />персональных данных в соответствии с условиями
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/breadcrumbs.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/top-left.js"></script>
+    <script src="../../js/vacancy.js"></script>
+  </body>
+</html>

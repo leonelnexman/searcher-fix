@@ -1,0 +1,1168 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/RobotoCondensed-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/static/RobotoCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/Manrope/static/Manrope-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/Manrope/static/Manrope-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.mobile-project-pointer {
+  display: none;
+}
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1720px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .vacancy-modal {
+    overflow-x: hidden !important;
+  }
+  .mobile-project-pointer img {
+    padding-bottom: 20px;
+  }
+  .mobile-project-pointer hr {
+    position: absolute;
+    width: 110vw;
+    right: -10vw;
+    opacity: 0.5;
+  }
+  .mobile-project-pointer {
+    padding: 10px 0;
+    display: flex !important;
+    flex-direction: column-reverse;
+    position: relative;
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-transform: uppercase;
+  }
+
+  .mobile-project-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .mobile-project-logo p {
+    padding-bottom: 0.5em;
+  }
+}
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul li p,
+p:nth-child(1) {
+  transition: 0.1s !important;
+}
+p,
+ul,
+hr {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+ul {
+  padding-inline-start: 0 !important;
+}
+.wrapper {
+  height: fit-content;
+  width: 100%;
+}
+
+.after-header {
+  position: relative;
+  height: 100%;
+}
+
+.blue {
+  color: #337bef;
+}
+
+.menu-logo {
+  position: absolute;
+  top: 0.5vh;
+  left: 2%;
+  z-index: 10;
+  width: 9.062rem;
+  height: 2.833rem;
+}
+.menu-logo img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1200px) and (min-width: 1000px) {
+  .menu-logo {
+    position: absolute;
+    top: 1.5%;
+    left: 1%;
+    z-index: 10;
+    width: 5.062rem;
+    height: 0.833rem;
+  }
+  .menu-logo img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .menu-logo {
+    display: none;
+  }
+}
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  color: #e0e0e0;
+  z-index: 10;
+}
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #ffffff;
+  gap: 1rem;
+  cursor: pointer;
+}
+.menu-items:hover {
+  background: none !important;
+}
+.menu-title {
+  font-family: "Manrope";
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: center;
+  padding-bottom: 2px;
+}
+.mobile-container-name {
+  position: absolute;
+  top: 0;
+  display: none;
+  height: 74px;
+  width: 100%;
+  border-bottom: 1px solid #050c1a33;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .mobile-container-name {
+    display: flex;
+  }
+}
+
+.user-level {
+  position: fixed;
+  top: 35%;
+  right: 0.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  color: #e0e0e0;
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+@media (max-width: 1024px) {
+  .user-level {
+    display: none;
+  }
+}
+.user-level div {
+  display: flex; /* Используем flexbox для выравнивания содержимого */
+  justify-content: start; /* Распределяем пространство между текстом и линией */
+  align-items: center; /* Центрируем элементы по вертикали */
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+.user-level p {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.066rem;
+  text-align: left;
+  text-align: right;
+}
+.user-right.hidden {
+  opacity: 0;
+}
+
+.user-level.slide-right {
+  transform: translateX(-10rem);
+}
+
+.user-level hr {
+  height: 0.0625rem;
+  width: 2.93rem;
+  border: none;
+  background-color: #e0e0e0;
+  z-index: 2;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.user-level div.active hr {
+  transform: scaleX(2);
+  height: 0.125rem;
+}
+.user-level div.active p {
+  font-weight: bold;
+}
+/* Стили для preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #337bef;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  z-index: 9999;
+  transition: opacity 1s ease, transform 1s ease; /* Плавный переход */
+}
+
+#preloader.slide-up {
+  transform: translateY(-100%); /* Смещаем прелоадер вверх */
+  pointer-events: none; /* Прекращаем взаимодействие */
+}
+
+.loader {
+  text-align: center;
+}
+
+.progress-text {
+  font-family: "Manrope";
+  font-size: 15rem;
+  font-weight: bold;
+  padding: 3rem;
+  color: #ffffff;
+}
+
+.progress-bar {
+  display: none;
+  width: 300px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.progress-fill {
+  width: 0;
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.1s;
+}
+
+.content {
+  display: none; /* Скрываем контент, пока идет загрузка */
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%); /* Изначальная позиция ниже */
+}
+
+.for-lines,
+.for-lines3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.animation-lines {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.left-line {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  z-index: 2;
+}
+.vertical-line {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  z-index: 2;
+}
+.right-line {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  z-index: 2;
+}
+
+.top-line {
+  position: absolute;
+  height: 0.0625rem;
+  top: 0;
+  left: -20%;
+  z-index: 2;
+}
+.horizontal-line {
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  z-index: 2;
+}
+.bottom-line {
+  position: absolute;
+  height: 0.0625rem;
+  bottom: 0;
+  left: -20%;
+  z-index: 2;
+}
+
+/* Вертикальные линии */
+.left-line hr,
+.right-line hr,
+.vertical-line hr {
+  height: 200vh;
+  width: 0.0625rem;
+  border: none;
+  background-color: #e0e0e020;
+  z-index: 2;
+  transform: scaleY(0); /* Начальное состояние */
+  transform-origin: top; /* Исходная точка снизу */
+  transition: transform 1s;
+}
+a {
+  color: white;
+}
+/* Горизонтальные линии */
+.top-line hr,
+.bottom-line hr,
+.horizontal-line hr {
+  height: 0.0625rem;
+  width: 110vw;
+  border: none;
+  background-color: #e0e0e020;
+  /* background-color: red; */
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s;
+  transition-delay: 0.5s;
+}
+@media (max-width: 768px) {
+  .top-line hr,
+  .bottom-line hr,
+  .horizontal-line hr,
+  .left-line hr,
+  .right-line hr,
+  .vertical-line hr {
+    display: none;
+  }
+}
+
+/* Анимация при добавлении класса active */
+.active .top-line hr,
+.active .bottom-line hr,
+.active .horizontal-line hr {
+  transform: scaleX(1); /* Линия растет по горизонтали */
+}
+
+.active .left-line hr,
+.active .right-line hr,
+.active .vertical-line hr {
+  transform: scaleY(1); /* Линия растет по вертикали */
+}
+
+/* little-animation-line */
+
+.little-animation-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.top-line-litte hr {
+  height: 2rem;
+  width: 0.0625rem;
+  /* background: #ffffff; */
+  background: #050c1a50;
+  border: none;
+  opacity: 0.5;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1s;
+}
+
+.horizontal-animation-lines {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.left-line-little hr {
+  width: 43rem;
+  height: 0.0625rem;
+  background: #050c1a50;
+  border: none;
+  opacity: 0.5;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 2s;
+  transition-delay: 1s;
+}
+
+.right-line-litte hr {
+  width: 43rem;
+  height: 0.0625rem;
+  background: #050c1a50;
+  border: none;
+  opacity: 0.5;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 2s;
+  transition-delay: 1s;
+}
+
+.active .top-line-litte hr {
+  transform: scaleY(1);
+}
+
+.active .left-line-little hr {
+  transform: scaleX(1);
+}
+
+.active .right-line-litte hr {
+  transform: scaleX(1);
+}
+
+/* contacts */
+.contacts {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  max-height: 100vh !important;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.contact-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050c1a;
+  opacity: 0.9;
+  z-index: 1;
+}
+.contact-section-mini {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #337bef !important;
+  opacity: 1;
+  z-index: 0;
+}
+.contacts-conteiner {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: start;
+  width: 90rem;
+  height: 100%;
+  margin-top: 3%;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .contacts {
+    height: 100vh !important;
+  }
+  .contacts-conteiner {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contact-box {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+  width: 50%;
+  margin-top: 2rem;
+  z-index: 10;
+}
+.contacts-title {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 4.375rem;
+  font-weight: 700;
+  line-height: 5.126rem;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 3rem;
+}
+.parted-title {
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  gap: 1rem;
+}
+.parted-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contacts-menu,
+.contacts-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding-left: 3rem;
+  width: 17.125rem;
+}
+.contacts-menu-title,
+.contacts-info-title {
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.536rem;
+  text-align: left;
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+}
+.contacts-menu-block {
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+}
+.contacts-menu-box ul li,
+.contacts-info-box ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.5rem 0;
+}
+.contacts-menu-box li a,
+.contacts-info-box li,
+.contacts-info-box li a {
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: left;
+  color: #ffffffbb;
+}
+.contacts-info-box li .inline-item {
+  gap: 0;
+}
+.inline-item {
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+}
+.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .contact-box {
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .contacts-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 15px;
+  }
+  .contacts-menu-mobile {
+    padding: 0;
+  }
+  .contacts-menu-title,
+  .contacts-info-title {
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
+    text-align: left;
+  }
+  .contacts-menu-block {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.86px;
+    text-align: left;
+  }
+  .contacts-menu-box ul li,
+  .contacts-info-box ul li {
+    padding: 5px 0;
+  }
+
+  .contacts-menu-box li a,
+  .contacts-info-box li,
+  .contacts-info-box li a {
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.86px;
+    text-align: left;
+  }
+
+  .contacts-info,
+  .contacts-menu {
+    display: none;
+  }
+  .contacts-info-mobile {
+    padding-left: 0 !important;
+  }
+  .contacts-title {
+    font-size: 40px;
+    line-height: 52.73px;
+  }
+
+  .mobile-widgets {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-conacts-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-conacts-text {
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.86px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .contact-us-mobile {
+    width: 162px;
+    height: 44px;
+    background: #ffffff;
+    border: 1px solid #337bef;
+    color: #337bef;
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: center;
+  }
+}
+
+.contacts-form {
+  box-sizing: border-box;
+  background: #ffffff;
+  height: 36.75rem;
+  width: 100%;
+  padding: 3rem;
+  box-shadow: 10px -10px 1px #337bef;
+}
+
+.contacts-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contacts-form form {
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-inputs input,
+.contacts-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Manrope";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.1rem;
+  text-align: left;
+  color: #050c1a;
+  padding: 2rem 1rem;
+  border: none;
+  background: #e5e9f0;
+}
+
+@media (max-width: 768px) {
+  .form-inputs {
+    gap: 20px;
+  }
+  .form-inputs input,
+  .contacts-form textarea {
+    padding: 20px;
+  }
+}
+
+.contacts-form textarea {
+  height: 9.062rem;
+}
+
+.form-inputs input:focus,
+.contacts-form textarea:focus {
+  outline: none;
+}
+
+.contacts-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+input[type="checkbox"] {
+  width: 24px; /* Ширина */
+  height: 24px; /* Высота */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+/* Стилизация (опционально) */
+input[type="checkbox"] {
+  appearance: none; /* Убираем стандартное оформление */
+  -webkit-appearance: none; /* Для WebKit-браузеров */
+  background-color: #fff;
+  border: 0.0625rem solid #71717147;
+  border-radius: 5px;
+  width: 24px !important;
+  height: 24px !important;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #337bef; /* Цвет галочки */
+  border-color: #337bef;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-1 {
+  width: 90%;
+}
+.checkbox-1 p,
+.checkbox-1 a {
+  font-family: "Manrope";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.825rem;
+  text-align: left;
+}
+
+.contacts-send {
+  width: 14.187rem;
+  height: 4.187rem;
+  background: #2e70db;
+}
+
+.contacts-send button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-family: "Manrope";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.536rem;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .contacts-send {
+    width: 163px;
+    height: 48px;
+  }
+
+  .contacts-send button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: center;
+  }
+}
+
+.contacts-footer {
+  box-sizing: border-box;
+  position: relative;
+  width: 90rem;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.contacts-footer-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  font-family: "Manrope";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.195rem;
+  text-align: left;
+  color: #ffffff;
+  padding: 1rem 3rem;
+}
+@media (max-width: 768px) {
+  .contact-box {
+    position: static;
+  }
+  .contacts-form {
+    position: absolute;
+    left: 0;
+    bottom: -10vh;
+    height: 70vh;
+    z-index: 1000;
+  }
+
+  .form-inputs input,
+  .contacts-form textarea {
+    font-size: 16px;
+    line-height: 17.6px;
+  }
+  .contacts-form textarea {
+    height: 145px;
+  }
+
+  .contacts-checkbox-container p,
+  .contacts-checkbox-container a {
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    text-align: left;
+  }
+  .contacts-checkbox-container a {
+    color: #337bef;
+  }
+
+  .contacts-footer {
+    width: 100%;
+  }
+  .contacts-footer-box {
+    font-family: "Manrope";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.86px;
+    text-align: left;
+  }
+}
+/* Модальное окно */
+#success-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 20px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 850px;
+  height: 468px;
+}
+.contacts-modal-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* contacts-modal */
+.contacts-modal-title {
+  font-family: "Roboto";
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 87.89px;
+  letter-spacing: -2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.blue {
+  color: #0056b3;
+}
+
+.contacts-modal-subtitle {
+  font-family: "Manrope";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32.78px;
+}
+
+/* Кнопка закрытия */
+#success-modal button {
+  font-family: "Manrope";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.32px;
+  text-align: center;
+  gap: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: none;
+  color: #337bef;
+  border: 0.0625rem solid #337bef;
+  width: 350px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#success-modal button:hover {
+  background-color: #337bef;
+  color: #ffffff;
+}
+
+/* Затемняющий слой */
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+@media (max-width: 768px) {
+  #success-modal {
+    width: 75vw;
+    height: 70vh;
+  }
+  .contacts-modal-title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52.73px;
+    letter-spacing: -2px;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 100px;
+  }
+  .contacts-modal-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    text-align: center;
+    width: 80%;
+  }
+  #success-modal button {
+    background-color: #337bef;
+    color: #ffffff;
+    width: 198px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21.86px;
+    margin-top: 40px;
+  }
+  #success-modal button:hover {
+    background-color: #ffffff;
+    color: #337bef;
+  }
+}
+.mobile-name,
+.mobile-name-darker {
+  display: none;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 74px;
+  z-index: 20;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 20px 25px;
+}
+.mobile-name {
+  border-bottom: 2px solid #e0e0e020;
+  color: #ffffff;
+}
+
+.mobile-name-darker {
+  display: none;
+  color: #050c1a;
+  border-bottom: 2px solid #050c1a26;
+}
+
+.web-none {
+  display: none !important;
+}
+
+.hidden {
+  display: flex;
+}
+.close-blue {
+  display: none;
+}
+
+.mobil-none {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .little-animation-line {
+    display: none;
+  }
+  .close-blue {
+    display: block;
+    float: right;
+    height: 22px;
+    width: 22px;
+    margin: 10px;
+  }
+  .mobile-name,
+  .mobile-name-darker {
+    display: flex;
+  }
+  .mobil-none {
+    display: none !important;
+  }
+  .web-none {
+    display: block !important;
+  }
+  .hidden {
+    display: none;
+  }
+}
