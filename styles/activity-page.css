@@ -72,9 +72,25 @@
 .hero-switch-card {
   position: relative;
   padding-top: 4em;
-  margin-bottom: 4em;
+  margin-bottom: 14rem;
   transition: all 0.2s ease-in-out;
   transform: translateY(50px);
+}
+
+.hero-card:hover .hero-card-title{
+  color: #fff;
+}
+
+.hero-card{
+  display: block;
+}
+
+.hero-ground-card{
+  margin-left: auto;
+}
+
+.hero-ground-title{
+  margin-left: auto;
 }
 
 .hero-card-description-card {
@@ -115,7 +131,7 @@
 }
 
 .hero-water-buttons {
-    left: 5%;
+    right: 5%;
     bottom:3%;
 }
 
@@ -126,7 +142,7 @@
   font-size: 1rem;
   position: absolute;
   left: 5%;
-  bottom: 15%;
+  bottom: 3%;
 }
 
 .hero-button-detais {
@@ -347,9 +363,11 @@ p:nth-child(2) {
   justify-content: flex-start;
 }
 
+
+
 @media (max-width: 962px){
   .hero-center-container{
-    width: 100%;
+    width: auto;
     overflow: hidden;
   } 
   .contacts-conteiner{
@@ -370,5 +388,51 @@ p:nth-child(2) {
   }
   .ground-badge{
     display: none;
+  }
+  .hero-center-container{
+      padding:  0 2rem;
+  }
+  .main-title{
+    font-size: 7rem;
+  }
+  .hero-description{
+    align-items: flex-start;
+  }
+  .hero-description-card-h2{
+    font-size: 2.5rem;
+    br{
+      display: none;
+    }
+  }
+  .hero-description-card-p{
+    font-size: 2rem;
+    br{
+      display: none;
+    }
+  }
+  .hero-card-description{
+    display: none;
+  }
+  .hero-button-contact{
+    padding: 1.5rem 2rem;
+  }
+  .hero-button-detais{
+    padding: 1.5rem 2rem;
+  }
+  .hero-water-buttons{
+    right: auto;
+    left: -7%;
+    justify-content: flex-start;
+    width: auto;
+  }
+  .mobile-project-pointer img{
+    padding-bottom: 0;
+  }
+  .mobile-project-logo p{
+    padding-bottom: 0;
+  }
+  .mobile-project-pointer{
+    padding: 2rem;
+    border-bottom: 1px solid rgba(5, 12, 26, 0.2);
   }
 }
