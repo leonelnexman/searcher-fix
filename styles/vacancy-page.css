@@ -374,6 +374,18 @@ body { overflow: -moz-scrollbars-none; }
     opacity: 1 !important;
     font-family: 'Manrope';
     font-size: 1.02rem;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.modal-submit-button:hover{
+    background: #fff;
+    color: #337BEF;
+    border: 1px solid #337BEF;
+}
+
+button{
+    cursor: pointer;
 }
 
 .modal-file-input {
